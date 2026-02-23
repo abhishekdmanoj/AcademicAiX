@@ -1,0 +1,16 @@
+{
+  "Chemical Thermal Polymer MTQP01": {
+    "entrance": "GATE",
+    "entrance_website": "https://gate2025.iitr.ac.in",
+    "pyq_links": [
+      "https://gate2025.iitr.ac.in/downloads"
+    ]
+  },
+  "CUET PG Nanoscience": {
+    "entrance": "CUET PG",
+    "entrance_website": "https://pgcuet.samarth.ac.in",
+    "pyq_links": [
+      "https://pgcuet.samarth.ac.in/index.php/site/publications"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "university": "Chemical Thermal Polymer MTQP01",
+    "file_path": "data/raw_pdfs/chemical_thermal_polymer_mtqp01_2025-2026.pdf",
+    "hash": "initial_manual_entry",
+    "academic_year": "2025-2026",
+    "is_active": true,
+    "last_checked": "2026-01-01"
+  },
+  {
+    "university": "CUET PG Nanoscience",
+    "file_path": "data/raw_pdfs/cuet_pg_nanoscience_2025-2026.pdf",
+    "hash": "initial_manual_entry_2",
+    "academic_year": "2025-2026",
+    "is_active": true,
+    "last_checked": "2026-01-01"
+  }
+]
