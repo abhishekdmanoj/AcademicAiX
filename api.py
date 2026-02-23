@@ -73,6 +73,31 @@ def rank(req: InterestRequest):
 def program_details(req: ProgramRequest):
 
     PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
+    # ----------------------------
+    # Load Registry (for syllabus)
+    # ----------------------------
+    registry_path = os.path.join(PROJECT_ROOT, "data", "registry.json")
+
+    if not os.path.exists(registry_path):
+        return {"error": "Registry not found."}
+
+    with open(registry_path, "r") as f:
+        registry = json.load(f)
+
+    syllabus_path = None
+
+    for entry in registry:
+        if (
+            entry["university"] == req.program
+            and entry.get("is_active", False)
+        ):
+            syllabus_path = entry.get("file_path")
+            break
+
+    # ----------------------------
+    # Load University Metadata
+    # ----------------------------
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
     if not os.path.exists(metadata_path):
@@ -86,8 +111,13 @@ def program_details(req: ProgramRequest):
     if not info:
         return {"error": "Program not found."}
 
+    # ----------------------------
+    # Unified Response
+    # ----------------------------
     return {
         "program": req.program,
-        "syllabus_pdf": info.get("syllabus_pdf"),
-        "entrances": info.get("entrances", [])
+        "syllabus_pdf": syllabus_path,
+        "entrance": info.get("entrance"),
+        "entrance_website": info.get("entrance_website"),
+        "pyq_links": info.get("pyq_links", [])
     }
