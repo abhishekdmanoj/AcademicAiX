@@ -21,9 +21,11 @@ syll_meta = None
 @app.on_event("startup")
 def startup():
     global model, syll_index, syll_meta
+    print("Loading embedding model...")
     model = load_embedding_model()
+    print("Loading FAISS index...")
     syll_index, syll_meta = load_syllabus_index()
-    print("✅ Model and index loaded.")
+    print("Startup complete.")
 
 
 # ----------------------------
