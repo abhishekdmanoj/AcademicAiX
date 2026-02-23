@@ -40,18 +40,21 @@ def rank_universities(interest, model, index, metadata, top_k=50):
 
     for i, idx in enumerate(indices[0]):
         item = metadata[idx]
-        university = item["university"]
+        college = item["college"]
+        program = item["program"]
+        program_key = f"{college}||{program}"
+
         similarity = float(similarities[0][i])
 
-        university_scores.setdefault(university, []).append(similarity)
-        university_units.setdefault(university, []).append(
-            (item["unit"], similarity)
+        university_scores.setdefault(program_key, []).append(similarity)
+        university_units.setdefault(program_key, []).append(
+        (item["unit"], similarity)
         )
-        university_pdf_paths[university] = item.get("file_path", "N/A")
+        university_pdf_paths[program_key] = item.get("file_path", "N/A")
 
     results = []
 
-    for university, sim_list in university_scores.items():
+    for program_key, sim_list in university_scores.items():
 
         positive_sims = [s for s in sim_list if s > 0]
 
@@ -65,13 +68,16 @@ def rank_universities(interest, model, index, metadata, top_k=50):
         final_score = mean_similarity * coverage_factor
 
         top_units = sorted(
-            [u for u in university_units[university] if u[1] > 0],
+            [u for u in university_units[program_key] if u[1] > 0],
             key=lambda x: x[1],
             reverse=True
         )[:5]
 
+        college, program = program_key.split("||")
+
         results.append({
-            "program": university,
+            "college": college,
+            "program": program,
             "score": round(final_score, 4),
             "explainability": {
                 "average_similarity": round(mean_similarity, 4),
@@ -79,7 +85,7 @@ def rank_universities(interest, model, index, metadata, top_k=50):
                 "coverage_factor": round(coverage_factor, 2),
                 "alignment_strength": classify_alignment(final_score)
             },
-            "syllabus_pdf": university_pdf_paths.get(university, "N/A"),
+            "syllabus_pdf": university_pdf_paths.get(program_key, "N/A"),
             "top_units": [
                 {
                     "unit": unit_text,

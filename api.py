@@ -36,6 +36,7 @@ class InterestRequest(BaseModel):
 
 
 class ProgramRequest(BaseModel):
+    college: str
     program: str
 
 
@@ -52,11 +53,11 @@ def rank(req: InterestRequest):
         syll_meta
     )
 
-    # Clean response for frontend
     cleaned = []
 
     for r in results:
         cleaned.append({
+            "college": r["college"],
             "program": r["program"],
             "score": r["score"],
             "alignment_strength": r["explainability"]["alignment_strength"],
@@ -75,7 +76,7 @@ def program_details(req: ProgramRequest):
     PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
     # ----------------------------
-    # Load Registry (for syllabus)
+    # Load Registry (for syllabus path)
     # ----------------------------
     registry_path = os.path.join(PROJECT_ROOT, "data", "registry.json")
 
@@ -89,8 +90,9 @@ def program_details(req: ProgramRequest):
 
     for entry in registry:
         if (
-            entry["university"] == req.program
-            and entry.get("is_active", False)
+            entry.get("college") == req.college and
+            entry.get("program") == req.program and
+            entry.get("is_active", False)
         ):
             syllabus_path = entry.get("file_path")
             break
@@ -106,15 +108,21 @@ def program_details(req: ProgramRequest):
     with open(metadata_path, "r") as f:
         data = json.load(f)
 
-    info = data.get(req.program)
+    college_data = data.get(req.college)
+
+    if not college_data:
+        return {"error": "College not found in metadata."}
+
+    info = college_data.get(req.program)
 
     if not info:
-        return {"error": "Program not found."}
+        return {"error": "Program not found in metadata."}
 
     # ----------------------------
     # Unified Response
     # ----------------------------
     return {
+        "college": req.college,
         "program": req.program,
         "syllabus_pdf": syllabus_path,
         "entrance": info.get("entrance"),

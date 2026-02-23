@@ -13,14 +13,16 @@ RAW_PDF_PATH = os.path.join(PROJECT_ROOT, "data", "raw_pdfs")
 
 
 # ---------------------------------
-# TRUSTED SOURCES (EDIT THIS)
+# TRUSTED SOURCES (PROGRAM-LEVEL)
 # ---------------------------------
-TRUSTED_SOURCES = {
-    "IIT Delhi": {
+TRUSTED_SOURCES = [
+    {
+        "college": "IIT Delhi",
+        "program": "M.Tech Chemical Engineering",
         "pdf_url": "https://example.com/iit_delhi_syllabus.pdf",
         "academic_year": "2025-2026"
     }
-}
+]
 
 
 # ---------------------------------
@@ -67,17 +69,20 @@ def download_pdf(url, save_path):
 
 
 # ---------------------------------
-# Ingestion Logic
+# Ingestion Logic (Program-Level)
 # ---------------------------------
-def ingest_university(university, config):
-    print(f"\n🔍 Checking updates for {university}...")
-
+def ingest_program(config):
+    college = config["college"]
+    program = config["program"]
     pdf_url = config["pdf_url"]
     academic_year = config.get("academic_year", "Unknown")
 
+    print(f"\n🔍 Checking updates for {college} - {program}...")
+
     os.makedirs(RAW_PDF_PATH, exist_ok=True)
 
-    temp_file_path = os.path.join(RAW_PDF_PATH, f"{university.replace(' ', '_').lower()}_temp.pdf")
+    safe_name = f"{college}_{program}".replace(" ", "_").lower()
+    temp_file_path = os.path.join(RAW_PDF_PATH, f"{safe_name}_temp.pdf")
 
     if not download_pdf(pdf_url, temp_file_path):
         return False
@@ -88,24 +93,32 @@ def ingest_university(university, config):
 
     # Check if identical version already exists
     for entry in registry:
-        if entry["university"] == university and entry["hash"] == new_hash:
+        if (
+            entry.get("college") == college and
+            entry.get("program") == program and
+            entry.get("hash") == new_hash
+        ):
             print("✅ No changes detected (hash match).")
             os.remove(temp_file_path)
             return False
 
     # Mark old versions inactive
     for entry in registry:
-        if entry["university"] == university:
+        if (
+            entry.get("college") == college and
+            entry.get("program") == program
+        ):
             entry["is_active"] = False
 
     # Rename file to permanent versioned name
-    final_filename = f"{university.replace(' ', '_').lower()}_{academic_year}.pdf"
+    final_filename = f"{safe_name}_{academic_year}.pdf"
     final_path = os.path.join(RAW_PDF_PATH, final_filename)
 
     os.rename(temp_file_path, final_path)
 
     new_entry = {
-        "university": university,
+        "college": college,
+        "program": program,
         "file_path": f"data/raw_pdfs/{final_filename}",
         "hash": new_hash,
         "academic_year": academic_year,
@@ -129,8 +142,8 @@ def run_ingestion():
 
     updated = False
 
-    for university, config in TRUSTED_SOURCES.items():
-        changed = ingest_university(university, config)
+    for config in TRUSTED_SOURCES:
+        changed = ingest_program(config)
         if changed:
             updated = True
 
