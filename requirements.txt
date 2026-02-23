@@ -1,6 +1,9 @@
-fastapi
-uvicorn
-sentence-transformers
-faiss-cpu
-pymupdf
-numpy
+fastapi==0.110.0
+uvicorn==0.27.1
+numpy==1.26.4
+pymupdf==1.23.26
+faiss-cpu==1.7.4
+
+sentence-transformers==2.6.1
+torch==2.2.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
