@@ -2,13 +2,23 @@ import os
 import json
 from fastapi import FastAPI
 from pydantic import BaseModel
-
+from fastapi.middleware.cors import CORSMiddleware
 from embeddings.model import load_embedding_model
 from runtime.index_loader import load_syllabus_index
 from runtime.ranking_service import rank_universities
 
 
 app = FastAPI(title="AcademicAiX")
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # allow all for now
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # ----------------------------
 # Global Runtime Objects
