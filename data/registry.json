@@ -3,24 +3,22 @@
     "college": "NIT Calicut",
     "program": "M.Tech Nanotechnology",
     "degree_level": "PG",
-    "entrance_ecosystem": "GATE",
     "file_path": "data/raw_pdfs/nitc_mtech_nanotechnology_2023.pdf",
     "source_url": "https://nitc.ac.in/imgserver/uploads/attachments/Ed__bcea6879-6528-4204-99ce-784cbbd19b78_.pdf",
-    "hash": "",
+    "hash": "0148739c2dd6b44f27c25b6e76548c73d89f515ec2d5292235e2fe1d3bd3b5f4",
     "academic_year": "2023",
     "is_active": true,
-    "last_checked": null
+    "last_checked": "2026-02-26"
   },
   {
-    "college": "NIT Trichy",
+    "college": "NIT Delhi",
     "program": "MCA",
     "degree_level": "PG",
-    "entrance_ecosystem": "NIMCET",
-    "file_path": "data/raw_pdfs/nitt_mca_2023.pdf",
-    "source_url": "https://...",
-    "hash": "",
-    "academic_year": "2023",
+    "file_path": "data/raw_pdfs/nitd_mca_2025.pdf",
+    "source_url": "https://nitdelhi.ac.in/wp-content/uploads/2025/07/NBA_MCA-Scheme-Syllabus.docx.pdf",
+    "hash": "4520b208556e312e146a5af8a48e462bc73b4d9257ce7d68dd616df64c8e8154",
+    "academic_year": "2025-2026",
     "is_active": true,
-    "last_checked": null
+    "last_checked": "2026-02-26"
   }
 ]

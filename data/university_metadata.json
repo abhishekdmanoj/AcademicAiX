@@ -2,12 +2,19 @@
   {
     "college": "NIT Calicut",
     "program": "M.Tech Nanotechnology",
-    "degree_level": "PG",
     "official_website": "https://nitc.ac.in",
-    "syllabus_pdf": "data/raw_pdfs/nitc_mtech_nanotechnology_2023.pdf",
     "entrance_exam": "GATE",
     "entrance_website": "https://gate.iitk.ac.in",
     "pyq_links": [],
     "last_updated": "2026-02-25"
+  },
+  {
+    "college": "NIT Delhi",
+    "program": "MCA",
+    "official_website": "https://nitdelhi.ac.in",
+    "entrance_exam": "NIMCET",
+    "entrance_website": "https://nimcet.admissions.nic.in",
+    "pyq_links": [],
+    "last_updated": "2026-02-26"
   }
 ]
