@@ -16,6 +16,7 @@ def load_university_metadata():
 def classify_alignment(score):
     """
     Alignment classification based on cosine similarity.
+    Calibrated for small corpus.
     """
     if score >= 0.55:
         return "Strong"
@@ -28,8 +29,9 @@ def classify_alignment(score):
 def rank_universities(interest, model, index, metadata, top_k=50):
     """
     Returns ranked programs with explainability.
-    Uses Top-3 strong unit similarities only.
-    Always returns a consistent schema (list of program objects).
+    Uses Top-3 strongest unit similarities.
+    Suppresses weak semantic noise using threshold.
+    Always returns consistent schema (list of program objects).
     """
 
     # Encode user query
@@ -64,11 +66,14 @@ def rank_universities(interest, model, index, metadata, top_k=50):
 
     results = []
 
+    # 🔥 Adjusted threshold (calibrated)
+    SIMILARITY_THRESHOLD = 0.28
+
     # Aggregate per program
     for program_key, sim_list in university_scores.items():
 
         # Ignore weak semantic noise
-        strong_sims = [s for s in sim_list if s >= 0.35]
+        strong_sims = [s for s in sim_list if s >= SIMILARITY_THRESHOLD]
 
         if not strong_sims:
             continue
@@ -81,7 +86,7 @@ def rank_universities(interest, model, index, metadata, top_k=50):
 
         # Top 3 explainability units
         top_units = sorted(
-            [u for u in university_units[program_key] if u[1] >= 0.35],
+            [u for u in university_units[program_key] if u[1] >= SIMILARITY_THRESHOLD],
             key=lambda x: x[1],
             reverse=True
         )[:3]
@@ -107,7 +112,7 @@ def rank_universities(interest, model, index, metadata, top_k=50):
             ]
         })
 
-    # IMPORTANT: Always return consistent schema
+    # Always return consistent schema
     if not results:
         return []
 
