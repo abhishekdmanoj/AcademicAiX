@@ -41,6 +41,30 @@ def clean_text(text):
     return text.strip()
 
 
+# 🚫 Filter out generic academic sections
+def is_generic_chunk(text):
+    generic_keywords = [
+        "vision",
+        "mission",
+        "program outcomes",
+        "peo",
+        "po-",
+        "scheme of",
+        "curriculum",
+        "credits",
+        "evaluation",
+        "project phase",
+        "articulation matrix",
+        "programme outcomes",
+        "program educational objectives",
+        "list of electives",
+        "total credits"
+    ]
+
+    text_lower = text.lower()
+    return any(keyword in text_lower for keyword in generic_keywords)
+
+
 def chunk_text(text, max_chars=1000):
     text = clean_text(text)
 
@@ -68,7 +92,11 @@ def chunk_text(text, max_chars=1000):
     if current_chunk:
         chunks.append(current_chunk.strip())
 
-    chunks = [c for c in chunks if len(c) > 200]
+    # 🔥 FILTER APPLIED HERE
+    chunks = [
+        c for c in chunks
+        if len(c) > 200 and not is_generic_chunk(c)
+    ]
 
     return chunks
 
