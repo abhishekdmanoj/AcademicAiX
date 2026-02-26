@@ -111,6 +111,7 @@ def program_details(req: ProgramRequest):
     # ----------------------------
     # Load University Metadata (NEW FLAT STRUCTURE)
     # ----------------------------
+    
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
     if not os.path.exists(metadata_path):
@@ -142,6 +143,6 @@ def program_details(req: ProgramRequest):
         "official_website": info.get("official_website"),
         "entrance_exam": info.get("entrance_exam"),
         "entrance_website": info.get("entrance_website"),
-        "pyq_links": info.get("pyq_links", []),
-        "last_updated": info.get("last_updated")
+        "entrance_syllabus_pdf": info.get("entrance_syllabus_pdf"),
+        "pyq_links": info.get("pyq_links", [])
     }
