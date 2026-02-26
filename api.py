@@ -81,6 +81,7 @@ def rank(req: InterestRequest):
 # Program Details Endpoint
 # ----------------------------
 @app.post("/program-details")
+
 def program_details(req: ProgramRequest):
 
     PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -108,7 +109,7 @@ def program_details(req: ProgramRequest):
             break
 
     # ----------------------------
-    # Load University Metadata
+    # Load University Metadata (NEW FLAT STRUCTURE)
     # ----------------------------
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
@@ -116,14 +117,17 @@ def program_details(req: ProgramRequest):
         return {"error": "Metadata not found."}
 
     with open(metadata_path, "r") as f:
-        data = json.load(f)
+        metadata_list = json.load(f)
 
-    college_data = data.get(req.college)
+    info = None
 
-    if not college_data:
-        return {"error": "College not found in metadata."}
-
-    info = college_data.get(req.program)
+    for entry in metadata_list:
+        if (
+            entry.get("college") == req.college and
+            entry.get("program") == req.program
+        ):
+            info = entry
+            break
 
     if not info:
         return {"error": "Program not found in metadata."}
@@ -135,7 +139,9 @@ def program_details(req: ProgramRequest):
         "college": req.college,
         "program": req.program,
         "syllabus_pdf": syllabus_path,
-        "entrance": info.get("entrance"),
+        "official_website": info.get("official_website"),
+        "entrance_exam": info.get("entrance_exam"),
         "entrance_website": info.get("entrance_website"),
-        "pyq_links": info.get("pyq_links", [])
+        "pyq_links": info.get("pyq_links", []),
+        "last_updated": info.get("last_updated")
     }

@@ -1,22 +1,26 @@
 [
   {
-    "college": "IIT Example",
-    "program": "Chemical Thermal Polymer Engineering",
+    "college": "NIT Calicut",
+    "program": "M.Tech Nanotechnology",
     "degree_level": "PG",
-    "file_path": "data/raw_pdfs/chemical_thermal_polymer_mtqp01_2025-2026.pdf",
-    "hash": "initial_manual_entry",
-    "academic_year": "2025-2026",
+    "entrance_ecosystem": "GATE",
+    "file_path": "data/raw_pdfs/nitc_mtech_nanotechnology_2023.pdf",
+    "source_url": "https://nitc.ac.in/imgserver/uploads/attachments/Ed__bcea6879-6528-4204-99ce-784cbbd19b78_.pdf",
+    "hash": "",
+    "academic_year": "2023",
     "is_active": true,
-    "last_checked": "2026-01-01"
+    "last_checked": null
   },
   {
-    "college": "Central University Example",
-    "program": "Nanoscience",
+    "college": "NIT Trichy",
+    "program": "MCA",
     "degree_level": "PG",
-    "file_path": "data/raw_pdfs/cuet_pg_nanoscience_2025-2026.pdf",
-    "hash": "initial_manual_entry_2",
-    "academic_year": "2025-2026",
+    "entrance_ecosystem": "NIMCET",
+    "file_path": "data/raw_pdfs/nitt_mca_2023.pdf",
+    "source_url": "https://...",
+    "hash": "",
+    "academic_year": "2023",
     "is_active": true,
-    "last_checked": "2026-01-01"
+    "last_checked": null
   }
 ]

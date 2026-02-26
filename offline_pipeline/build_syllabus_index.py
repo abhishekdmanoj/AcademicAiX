@@ -5,6 +5,8 @@ import numpy as np
 import pickle
 import fitz  # PyMuPDF
 import re
+import hashlib
+from datetime import datetime
 
 from embeddings.model import load_embedding_model
 from embeddings.embed_chunks import embed_chunks
@@ -15,6 +17,15 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 REGISTRY_PATH = os.path.join(PROJECT_ROOT, "data", "registry.json")
 INDEX_PATH = os.path.join(PROJECT_ROOT, "vector_store", "faiss_syllabus.index")
 METADATA_PATH = os.path.join(PROJECT_ROOT, "vector_store", "metadata_syllabus.pkl")
+
+
+# 🔐 SHA-256 HASH FUNCTION
+def compute_sha256(file_path):
+    sha256 = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            sha256.update(chunk)
+    return sha256.hexdigest()
 
 
 def extract_text_from_pdf(pdf_path):
@@ -94,6 +105,16 @@ def build_syllabus_index():
 
         print(f"📄 Processing {college} - {program}...")
 
+        # 🔐 Compute SHA-256 and update registry
+        new_hash = compute_sha256(file_path)
+
+        if entry.get("hash") != new_hash:
+            print(f"🔄 Updating hash for {program}")
+            entry["hash"] = new_hash
+
+        entry["last_checked"] = str(datetime.now().date())
+
+        # 🔍 Extract text & embed
         text = extract_text_from_pdf(file_path)
         chunks = chunk_text(text)
 
@@ -126,6 +147,10 @@ def build_syllabus_index():
 
     with open(METADATA_PATH, "wb") as f:
         pickle.dump(metadata, f)
+
+    # 💾 Save updated registry with real hashes
+    with open(REGISTRY_PATH, "w") as f:
+        json.dump(registry, f, indent=2)
 
     print("✅ Syllabus index built successfully!")
 

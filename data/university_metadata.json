@@ -1,20 +1,13 @@
-{
-  "IIT Example": {
-    "Chemical Thermal Polymer Engineering": {
-      "entrance": "GATE",
-      "entrance_website": "https://gate2025.iitr.ac.in",
-      "pyq_links": [
-        "https://gate2025.iitr.ac.in/downloads"
-      ]
-    }
-  },
-  "Central University Example": {
-    "Nanoscience": {
-      "entrance": "CUET PG",
-      "entrance_website": "https://pgcuet.samarth.ac.in",
-      "pyq_links": [
-        "https://pgcuet.samarth.ac.in/index.php/site/publications"
-      ]
-    }
+[
+  {
+    "college": "NIT Calicut",
+    "program": "M.Tech Nanotechnology",
+    "degree_level": "PG",
+    "official_website": "https://nitc.ac.in",
+    "syllabus_pdf": "data/raw_pdfs/nitc_mtech_nanotechnology_2023.pdf",
+    "entrance_exam": "GATE",
+    "entrance_website": "https://gate.iitk.ac.in",
+    "pyq_links": [],
+    "last_updated": "2026-02-25"
   }
-}
+]
