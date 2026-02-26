@@ -3,9 +3,13 @@
     "college": "NIT Calicut",
     "program": "M.Tech Nanotechnology",
     "official_website": "https://nitc.ac.in",
-    "entrance_exam": "GATE",
-    "entrance_website": "https://gate.iitk.ac.in",
-    "entrance_syllabus_pdf": "https://gate.iitk.ac.in/syllabus.php",
+    "entrance_exams": [
+      {
+        "name": "GATE",
+        "website": "https://gate.iitk.ac.in",
+        "syllabus_pdf": "https://gate.iitk.ac.in/syllabus.php"
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-02-25"
   },
@@ -13,13 +17,51 @@
     "college": "NIT Delhi",
     "program": "MCA",
     "official_website": "https://nitdelhi.ac.in",
-    "entrance_exam": "NIMCET",
-    "entrance_website": "https://nimcet.admissions.nic.in",
-    "entrance_syllabus_pdf": "https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf",
+    "entrance_exams": [
+      {
+        "name": "NIMCET",
+        "website": "https://nimcet.admissions.nic.in",
+        "syllabus_pdf": "https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf"
+      }
+    ],
     "pyq_links": [
       "https://d2bps9p1kiy4ka.cloudfront.net/5b09189f7285894d9130ccd0/643f29a3-853d-4d18-9483-976e11713462.pdf",
       "https://d2bps9p1kiy4ka.cloudfront.net/5b09189f7285894d9130ccd0/ea6ad8d6-7f94-4301-abdb-ebcd49db95f9.pdf"
     ],
     "last_updated": "2026-02-26"
+  },
+  {
+    "college": "Rajagiri College of Social Sciences",
+    "program": "MBA",
+    "official_website": "https://rajagiri.edu",
+    "entrance_exams": [
+      {
+        "name": "CMAT",
+        "website": "https://nta.ac.in/CMAT"
+      },
+      {
+        "name": "CAT",
+        "website": "https://iimcat.ac.in"
+      },
+      {
+        "name": "KMAT",
+        "website": "https://cee.kerala.gov.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-02-26"
+  },
+  {
+    "college": "University of Delhi",
+    "program": "B.A. (Hons.) Economics",
+    "official_website": "https://www.du.ac.in",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.samarth.ac.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-02-27"
   }
 ]

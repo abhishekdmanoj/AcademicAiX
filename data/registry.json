@@ -20,5 +20,27 @@
     "academic_year": "2025-2026",
     "is_active": true,
     "last_checked": "2026-02-26"
-  }
+  },
+  {
+    "college": "Rajagiri College of Social Sciences",
+    "program": "MBA",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/rajagiri_mba_2024.pdf",
+    "source_url": "https://rajagiri.edu/academic-syllabus/mba",
+    "hash": "f60ae500e242a0486dbbb9b0c7a17299bf09a870f8e55e8e112fbdd6d67521b5",
+    "academic_year": "2024-2025",
+    "is_active": true,
+    "last_checked": "2026-02-26"
+  },
+  {
+  "college": "University of Delhi",
+  "program": "B.A. (Hons.) Economics",
+  "degree_level": "UG",
+  "file_path": "data/raw_pdfs/du_ba_hons_economics_2024.pdf",
+  "source_url": "https://www.du.ac.in/uploads/RevisedSyllabi1/Annexure-170%20(B.A.%20(Hons.)%20Economics).pdf",
+  "hash": "",
+  "academic_year": "2024-2025",
+  "is_active": true,
+  "last_checked": "2026-02-27"
+}
 ]
