@@ -15,9 +15,13 @@ def load_university_metadata():
 
 
 def classify_alignment(score):
-    if score >= 0.45:
+    """
+    More realistic thresholds for cosine similarity
+    with normalized SentenceTransformer embeddings.
+    """
+    if score >= 0.55:
         return "Strong"
-    elif score >= 0.30:
+    elif score >= 0.40:
         return "Moderate"
     else:
         return "Weak"
@@ -26,19 +30,26 @@ def classify_alignment(score):
 def rank_universities(interest, model, index, metadata, top_k=50):
     """
     Returns ranked programs with explainability.
-    Does NOT return entrance/PYQ info.
+    Uses Top-3 strong unit similarities only.
     """
 
+    # 🔹 Encode query
     query_vector = model.encode([interest])
     faiss.normalize_L2(query_vector)
 
+    # 🔹 Search FAISS
     similarities, indices = index.search(query_vector, top_k)
 
     university_scores = {}
     university_units = {}
     university_pdf_paths = {}
 
+    # 🔹 Collect raw matches
     for i, idx in enumerate(indices[0]):
+
+        if idx == -1:
+            continue
+
         item = metadata[idx]
         college = item["college"]
         program = item["program"]
@@ -48,30 +59,33 @@ def rank_universities(interest, model, index, metadata, top_k=50):
 
         university_scores.setdefault(program_key, []).append(similarity)
         university_units.setdefault(program_key, []).append(
-        (item["unit"], similarity)
+            (item["unit"], similarity)
         )
         university_pdf_paths[program_key] = item.get("file_path", "N/A")
 
     results = []
 
+    # 🔹 Aggregate per program
     for program_key, sim_list in university_scores.items():
 
-        positive_sims = [s for s in sim_list if s > 0]
+        # 🔥 Ignore weak semantic noise
+        strong_sims = [s for s in sim_list if s >= 0.35]
 
-        if not positive_sims:
+        if not strong_sims:
             continue
 
-        top_sims = sorted(positive_sims, reverse=True)[:5]
+        # 🔥 Top-3 strongest units define specialization
+        top_sims = sorted(strong_sims, reverse=True)[:3]
 
         mean_similarity = sum(top_sims) / len(top_sims)
-        coverage_factor = 1 + (len(top_sims) / 5)
-        final_score = mean_similarity * coverage_factor
+        final_score = mean_similarity
 
+        # 🔹 Top 3 explainability units
         top_units = sorted(
-            [u for u in university_units[program_key] if u[1] > 0],
+            [u for u in university_units[program_key] if u[1] >= 0.35],
             key=lambda x: x[1],
             reverse=True
-        )[:5]
+        )[:3]
 
         college, program = program_key.split("||")
 
@@ -82,7 +96,6 @@ def rank_universities(interest, model, index, metadata, top_k=50):
             "explainability": {
                 "average_similarity": round(mean_similarity, 4),
                 "matched_unit_count": len(top_sims),
-                "coverage_factor": round(coverage_factor, 2),
                 "alignment_strength": classify_alignment(final_score)
             },
             "syllabus_pdf": university_pdf_paths.get(program_key, "N/A"),
@@ -96,6 +109,6 @@ def rank_universities(interest, model, index, metadata, top_k=50):
         })
 
     if not results:
-        return [{"message": "No strong matches found."}]
+        return [{"message": "No strong specialization matches found."}]
 
     return sorted(results, key=lambda x: x["score"], reverse=True)
