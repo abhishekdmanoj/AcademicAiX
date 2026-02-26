@@ -3,6 +3,7 @@ import json
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from embeddings.model import load_embedding_model
 from runtime.index_loader import load_syllabus_index
 from runtime.ranking_service import rank_universities
@@ -10,8 +11,17 @@ from runtime.ranking_service import rank_universities
 
 app = FastAPI(title="AcademicAiX")
 
-from fastapi.middleware.cors import CORSMiddleware
+# ----------------------------
+# Static File Mount (Serve PDFs)
+# ----------------------------
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+DATA_PATH = os.path.join(PROJECT_ROOT, "data")
 
+app.mount("/data", StaticFiles(directory=DATA_PATH), name="data")
+
+# ----------------------------
+# CORS Configuration
+# ----------------------------
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # allow all for now
@@ -81,10 +91,7 @@ def rank(req: InterestRequest):
 # Program Details Endpoint
 # ----------------------------
 @app.post("/program-details")
-
 def program_details(req: ProgramRequest):
-
-    PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
     # ----------------------------
     # Load Registry (for syllabus path)
@@ -109,9 +116,8 @@ def program_details(req: ProgramRequest):
             break
 
     # ----------------------------
-    # Load University Metadata (NEW FLAT STRUCTURE)
+    # Load University Metadata (Flat Structure)
     # ----------------------------
-    
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
     if not os.path.exists(metadata_path):
