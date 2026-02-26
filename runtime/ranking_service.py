@@ -1,26 +1,19 @@
 import faiss
 import json
 import os
+import numpy as np
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 UNIVERSITY_METADATA_PATH = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
 
-def load_university_metadata():
-    if not os.path.exists(UNIVERSITY_METADATA_PATH):
-        return {}
-    with open(UNIVERSITY_METADATA_PATH, "r") as f:
-        return json.load(f)
-
-
 def classify_alignment(score):
     """
-    Alignment classification based on cosine similarity.
-    Calibrated for small corpus.
+    Alignment classification based on normalized score.
     """
-    if score >= 0.55:
+    if score >= 0.75:
         return "Strong"
-    elif score >= 0.40:
+    elif score >= 0.45:
         return "Moderate"
     else:
         return "Weak"
@@ -28,24 +21,23 @@ def classify_alignment(score):
 
 def rank_universities(interest, model, index, metadata, top_k=50):
     """
-    Returns ranked programs with explainability.
-    Uses Top-3 strongest unit similarities.
-    Suppresses weak semantic noise using threshold.
-    Always returns consistent schema (list of program objects).
+    Final academic ranking implementation.
+    Weighted semantic aggregation.
+    No hard thresholds.
+    Query-normalized.
     """
 
-    # Encode user query
+    # Encode query
     query_vector = model.encode([interest])
     faiss.normalize_L2(query_vector)
 
-    # Search FAISS
     similarities, indices = index.search(query_vector, top_k)
 
-    university_scores = {}
-    university_units = {}
-    university_pdf_paths = {}
+    program_sims = {}
+    program_units = {}
+    program_pdf_paths = {}
 
-    # Collect matches
+    # Collect similarities per program
     for i, idx in enumerate(indices[0]):
 
         if idx == -1:
@@ -54,55 +46,77 @@ def rank_universities(interest, model, index, metadata, top_k=50):
         item = metadata[idx]
         college = item["college"]
         program = item["program"]
-        program_key = f"{college}||{program}"
+        key = f"{college}||{program}"
 
-        similarity = float(similarities[0][i])
+        sim = float(similarities[0][i])
 
-        university_scores.setdefault(program_key, []).append(similarity)
-        university_units.setdefault(program_key, []).append(
-            (item["unit"], similarity)
-        )
-        university_pdf_paths[program_key] = item.get("file_path", "N/A")
+        program_sims.setdefault(key, []).append(sim)
+        program_units.setdefault(key, []).append((item["unit"], sim))
+        program_pdf_paths[key] = item.get("file_path", "N/A")
+
+    raw_scores = {}
+    explain_data = {}
+
+    for key, sims in program_sims.items():
+
+        # Take top 5 similarities
+        top_sims = sorted(sims, reverse=True)[:5]
+
+        if len(top_sims) == 0:
+            continue
+
+        sims_array = np.array(top_sims)
+
+        # Weighted specialization score
+        weighted_score = np.sum(sims_array ** 2) / np.sum(sims_array)
+
+        # Peak reinforcement
+        peak = np.max(sims_array)
+
+        # Combined raw score
+        raw_score = 0.7 * weighted_score + 0.3 * peak
+
+        raw_scores[key] = raw_score
+        explain_data[key] = {
+            "top_sims": top_sims,
+            "weighted_score": weighted_score,
+            "peak": peak
+        }
+
+    if not raw_scores:
+        return []
+
+    # Normalize scores per query
+    min_score = min(raw_scores.values())
+    max_score = max(raw_scores.values())
 
     results = []
 
-    # 🔥 Adjusted threshold (calibrated)
-    SIMILARITY_THRESHOLD = 0.28
+    for key, raw in raw_scores.items():
 
-    # Aggregate per program
-    for program_key, sim_list in university_scores.items():
+        if max_score == min_score:
+            normalized = 0.5
+        else:
+            normalized = (raw - min_score) / (max_score - min_score)
 
-        # Ignore weak semantic noise
-        strong_sims = [s for s in sim_list if s >= SIMILARITY_THRESHOLD]
+        college, program = key.split("||")
 
-        if not strong_sims:
-            continue
-
-        # Top-3 strongest similarities define specialization
-        top_sims = sorted(strong_sims, reverse=True)[:3]
-
-        mean_similarity = sum(top_sims) / len(top_sims)
-        final_score = mean_similarity
-
-        # Top 3 explainability units
         top_units = sorted(
-            [u for u in university_units[program_key] if u[1] >= SIMILARITY_THRESHOLD],
+            program_units[key],
             key=lambda x: x[1],
             reverse=True
         )[:3]
 
-        college, program = program_key.split("||")
-
         results.append({
             "college": college,
             "program": program,
-            "score": round(final_score, 4),
+            "score": round(normalized, 4),
             "explainability": {
-                "average_similarity": round(mean_similarity, 4),
-                "matched_unit_count": len(top_sims),
-                "alignment_strength": classify_alignment(final_score)
+                "weighted_semantic_score": round(explain_data[key]["weighted_score"], 4),
+                "peak_similarity": round(explain_data[key]["peak"], 4),
+                "alignment_strength": classify_alignment(normalized)
             },
-            "syllabus_pdf": university_pdf_paths.get(program_key, "N/A"),
+            "syllabus_pdf": program_pdf_paths.get(key, "N/A"),
             "top_units": [
                 {
                     "unit": unit_text,
@@ -111,9 +125,5 @@ def rank_universities(interest, model, index, metadata, top_k=50):
                 for unit_text, sim in top_units
             ]
         })
-
-    # Always return consistent schema
-    if not results:
-        return []
 
     return sorted(results, key=lambda x: x["score"], reverse=True)
