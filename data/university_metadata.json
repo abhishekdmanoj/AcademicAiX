@@ -15,8 +15,11 @@
     "official_website": "https://nitdelhi.ac.in",
     "entrance_exam": "NIMCET",
     "entrance_website": "https://nimcet.admissions.nic.in",
-    "entrance_syllabus_pdf": "https://nimcet.admissions.nic.in/syllabus",
-    "pyq_links": [],
+    "entrance_syllabus_pdf": "https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf",
+    "pyq_links": [
+      "https://d2bps9p1kiy4ka.cloudfront.net/5b09189f7285894d9130ccd0/643f29a3-853d-4d18-9483-976e11713462.pdf",
+      "https://d2bps9p1kiy4ka.cloudfront.net/5b09189f7285894d9130ccd0/ea6ad8d6-7f94-4301-abdb-ebcd49db95f9.pdf"
+    ],
     "last_updated": "2026-02-26"
   }
 ]
