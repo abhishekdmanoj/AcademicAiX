@@ -1,5 +1,4 @@
 import faiss
-import math
 import json
 import os
 
@@ -15,18 +14,18 @@ def load_university_metadata():
 
 
 def classify_alignment(score):
-    if score >= 0.45:
+    if score >= 0.60:
         return "Strong"
-    elif score >= 0.30:
+    elif score >= 0.40:
         return "Moderate"
     else:
         return "Weak"
 
 
-def rank_universities(interest, model, index, metadata, top_k=50):
+def rank_universities(interest, model, index, metadata, top_k=10):
     """
-    Returns ranked programs with explainability.
-    Does NOT return entrance/PYQ info.
+    PROGRAM-LEVEL semantic ranking.
+    Clean cosine similarity.
     """
 
     query_vector = model.encode([interest])
@@ -34,68 +33,29 @@ def rank_universities(interest, model, index, metadata, top_k=50):
 
     similarities, indices = index.search(query_vector, top_k)
 
-    university_scores = {}
-    university_units = {}
-    university_pdf_paths = {}
+    results = []
 
     for i, idx in enumerate(indices[0]):
+
+        if idx == -1:
+            continue
+
         item = metadata[idx]
-        college = item["college"]
-        program = item["program"]
-        program_key = f"{college}||{program}"
 
         similarity = float(similarities[0][i])
 
-        university_scores.setdefault(program_key, []).append(similarity)
-        university_units.setdefault(program_key, []).append(
-        (item["unit"], similarity)
-        )
-        university_pdf_paths[program_key] = item.get("file_path", "N/A")
-
-    results = []
-
-    for program_key, sim_list in university_scores.items():
-
-        positive_sims = [s for s in sim_list if s > 0]
-
-        if not positive_sims:
-            continue
-
-        top_sims = sorted(positive_sims, reverse=True)[:5]
-
-        mean_similarity = sum(top_sims) / len(top_sims)
-        coverage_factor = 1 + (len(top_sims) / 5)
-        final_score = mean_similarity * coverage_factor
-
-        top_units = sorted(
-            [u for u in university_units[program_key] if u[1] > 0],
-            key=lambda x: x[1],
-            reverse=True
-        )[:5]
-
-        college, program = program_key.split("||")
-
         results.append({
-            "college": college,
-            "program": program,
-            "score": round(final_score, 4),
+            "college": item["college"],
+            "program": item["program"],
+            "score": round(similarity, 4),
             "explainability": {
-                "average_similarity": round(mean_similarity, 4),
-                "matched_unit_count": len(top_sims),
-                "coverage_factor": round(coverage_factor, 2),
-                "alignment_strength": classify_alignment(final_score)
+                "average_similarity": round(similarity, 4),
+                "matched_unit_count": 1,
+                "coverage_factor": 1.0,
+                "alignment_strength": classify_alignment(similarity)
             },
-            "syllabus_pdf": university_pdf_paths.get(program_key, "N/A"),
-            "top_units": [
-                {
-                    "unit": unit_text,
-                    "similarity": round(sim, 4)
-                }
-                for unit_text, sim in top_units
-            ]
+            "syllabus_pdf": item.get("file_path", "N/A"),
+            "top_units": []
         })
-
-    if not results:
-        return [{"message": "No strong matches found."}]
 
     return sorted(results, key=lambda x: x["score"], reverse=True)
