@@ -1,5 +1,4 @@
 import faiss
-import math
 import json
 import os
 
@@ -16,8 +15,7 @@ def load_university_metadata():
 
 def classify_alignment(score):
     """
-    More realistic thresholds for cosine similarity
-    with normalized SentenceTransformer embeddings.
+    Alignment classification based on cosine similarity.
     """
     if score >= 0.55:
         return "Strong"
@@ -31,20 +29,21 @@ def rank_universities(interest, model, index, metadata, top_k=50):
     """
     Returns ranked programs with explainability.
     Uses Top-3 strong unit similarities only.
+    Always returns a consistent schema (list of program objects).
     """
 
-    # 🔹 Encode query
+    # Encode user query
     query_vector = model.encode([interest])
     faiss.normalize_L2(query_vector)
 
-    # 🔹 Search FAISS
+    # Search FAISS
     similarities, indices = index.search(query_vector, top_k)
 
     university_scores = {}
     university_units = {}
     university_pdf_paths = {}
 
-    # 🔹 Collect raw matches
+    # Collect matches
     for i, idx in enumerate(indices[0]):
 
         if idx == -1:
@@ -65,22 +64,22 @@ def rank_universities(interest, model, index, metadata, top_k=50):
 
     results = []
 
-    # 🔹 Aggregate per program
+    # Aggregate per program
     for program_key, sim_list in university_scores.items():
 
-        # 🔥 Ignore weak semantic noise
+        # Ignore weak semantic noise
         strong_sims = [s for s in sim_list if s >= 0.35]
 
         if not strong_sims:
             continue
 
-        # 🔥 Top-3 strongest units define specialization
+        # Top-3 strongest similarities define specialization
         top_sims = sorted(strong_sims, reverse=True)[:3]
 
         mean_similarity = sum(top_sims) / len(top_sims)
         final_score = mean_similarity
 
-        # 🔹 Top 3 explainability units
+        # Top 3 explainability units
         top_units = sorted(
             [u for u in university_units[program_key] if u[1] >= 0.35],
             key=lambda x: x[1],
@@ -108,7 +107,8 @@ def rank_universities(interest, model, index, metadata, top_k=50):
             ]
         })
 
+    # IMPORTANT: Always return consistent schema
     if not results:
-        return [{"message": "No strong specialization matches found."}]
+        return []
 
     return sorted(results, key=lambda x: x["score"], reverse=True)
