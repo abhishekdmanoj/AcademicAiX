@@ -40,13 +40,14 @@ def clean_text(text):
     return text.strip()
 
 
+# ✅ FIXED FILTER (less aggressive)
 def is_generic_chunk(text):
     generic_keywords = [
-        "vision", "mission", "program outcomes", "peo", "po-",
-        "scheme of", "curriculum", "credits", "evaluation",
-        "project phase", "articulation matrix",
-        "programme outcomes", "program educational objectives",
-        "list of electives", "total credits"
+        "vision",
+        "mission",
+        "articulation matrix",
+        "list of electives",
+        "total credits"
     ]
     text_lower = text.lower()
     return any(keyword in text_lower for keyword in generic_keywords)
@@ -65,7 +66,7 @@ def chunk_text(text, max_chars=1000):
 
     for section in sections:
         section = section.strip()
-        if not section or len(section) < 100:
+        if not section or len(section) < 80:
             continue
 
         if len(current_chunk) + len(section) <= max_chars:
@@ -78,9 +79,10 @@ def chunk_text(text, max_chars=1000):
     if current_chunk:
         chunks.append(current_chunk.strip())
 
+    # ✅ Lowered minimum size from 200 → 80
     chunks = [
         c for c in chunks
-        if len(c) > 200 and not is_generic_chunk(c)
+        if len(c) > 80 and not is_generic_chunk(c)
     ]
 
     return chunks
@@ -116,29 +118,37 @@ def build_syllabus_index():
             print(f"❌ File not found: {file_path}")
             continue
 
-        print(f"📄 Processing {college} - {program}")
+        print(f"\n📄 Processing {college} - {program}")
 
         new_hash = compute_sha256(file_path)
         entry["hash"] = new_hash
         entry["last_checked"] = str(datetime.now().date())
 
+        # 🔍 TEXT DEBUG
         text = extract_text_from_pdf(file_path)
+        print(f"🔍 Raw text length: {len(text)}")
+        print(f"🔍 First 500 characters:\n{text[:500]}\n")
+
         chunks = chunk_text(text)
 
+        # 🔍 CHUNK DEBUG
+        print(f"  → {len(chunks)} chunks survived filtering")
+
+        for i, chunk in enumerate(chunks[:3]):
+            print(f"  Chunk {i+1}: {chunk[:120]}\n")
+
         if not chunks:
+            print(f"⚠ No valid chunks for {program} — skipping.")
             continue
 
         embeddings = embed_chunks(chunks, model)
         embeddings = np.array(embeddings).astype("float32")
 
-        # Normalize unit embeddings
         faiss.normalize_L2(embeddings)
 
-        # Compute centroid vector
         centroid = np.mean(embeddings, axis=0).astype("float32")
         centroid = centroid.reshape(1, -1)
 
-        # Normalize centroid
         faiss.normalize_L2(centroid)
 
         program_vectors.append(centroid[0])
@@ -169,7 +179,7 @@ def build_syllabus_index():
     with open(REGISTRY_PATH, "w") as f:
         json.dump(registry, f, indent=2)
 
-    print("✅ PROGRAM-LEVEL syllabus index built successfully!")
+    print("\n✅ PROGRAM-LEVEL syllabus index built successfully!")
 
 
 if __name__ == "__main__":
