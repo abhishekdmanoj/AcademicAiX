@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+
 from embeddings.model import load_embedding_model
 from runtime.index_loader import load_syllabus_index
 from runtime.ranking_service import rank_universities
@@ -24,7 +25,7 @@ app.mount("/data", StaticFiles(directory=DATA_PATH), name="data")
 # ----------------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow all for now
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -46,6 +47,15 @@ def startup():
     print("Loading FAISS index...")
     syll_index, syll_meta = load_syllabus_index()
     print("Startup complete.")
+
+
+# ----------------------------
+# Utility Normalization
+# ----------------------------
+def normalize(text):
+    if not text:
+        return ""
+    return text.strip().lower()
 
 
 # ----------------------------
@@ -108,15 +118,15 @@ def program_details(req: ProgramRequest):
 
     for entry in registry:
         if (
-            entry.get("college") == req.college and
-            entry.get("program") == req.program and
-            entry.get("is_active", False)
+            normalize(entry.get("college")) == normalize(req.college)
+            and normalize(entry.get("program")) == normalize(req.program)
+            and entry.get("is_active", False)
         ):
             syllabus_path = entry.get("file_path")
             break
 
     # ----------------------------
-    # Load University Metadata (Flat Structure)
+    # Load University Metadata (New Structure)
     # ----------------------------
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
@@ -130,8 +140,8 @@ def program_details(req: ProgramRequest):
 
     for entry in metadata_list:
         if (
-            entry.get("college") == req.college and
-            entry.get("program") == req.program
+            normalize(entry.get("college")) == normalize(req.college)
+            and normalize(entry.get("program")) == normalize(req.program)
         ):
             info = entry
             break
@@ -140,15 +150,13 @@ def program_details(req: ProgramRequest):
         return {"error": "Program not found in metadata."}
 
     # ----------------------------
-    # Unified Response
+    # Unified Response (NEW STRUCTURE)
     # ----------------------------
     return {
         "college": req.college,
         "program": req.program,
         "syllabus_pdf": syllabus_path,
         "official_website": info.get("official_website"),
-        "entrance_exam": info.get("entrance_exam"),
-        "entrance_website": info.get("entrance_website"),
-        "entrance_syllabus_pdf": info.get("entrance_syllabus_pdf"),
+        "entrance_exams": info.get("entrance_exams", []),
         "pyq_links": info.get("pyq_links", [])
     }
