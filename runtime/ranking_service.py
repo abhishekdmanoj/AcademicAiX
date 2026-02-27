@@ -14,9 +14,9 @@ def load_university_metadata():
 
 
 def classify_alignment(score):
-    if score >= 0.60:
+    if score >= 0.30:
         return "Strong"
-    elif score >= 0.40:
+    elif score >= 0.20:
         return "Moderate"
     else:
         return "Weak"
