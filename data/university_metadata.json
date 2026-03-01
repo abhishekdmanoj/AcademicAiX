@@ -58,10 +58,45 @@
     "entrance_exams": [
       {
         "name": "CUET-UG",
-        "website": "https://cuet.samarth.ac.in"
+        "website": "https://cuet.nta.nic.in/cuetug-2026-syllabus/"
       }
     ],
-    "pyq_links": [],
+    "pyq_links": [
+      "https://testcoach.in/cuet/download-previous-years-question-papers/"
+    ],
+    "last_updated": "2026-02-27"
+  },
+  {
+    "college": "University of Delhi",
+    "program": "B.Com (Hons.)",
+    "official_website": "https://www.du.ac.in",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in/cuetug-2026-syllabus/"
+      }
+    ],
+    "pyq_links": [
+      "https://testcoach.in/cuet/download-previous-years-question-papers/"
+    ],
+    "last_updated": "2026-02-27"
+  },
+  {
+    "college": "NIT Delhi",
+    "program": "B.Tech Computer Science and Engineering",
+    "official_website": "https://nitdelhi.ac.in",
+    "entrance_exams": [
+      {
+        "name": "JEE Main",
+        "website": "https://jeemain.nta.nic.in",
+        "syllabus_pdf": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/10/202510311323551056.pdf"
+      }
+    ],
+    "pyq_links": [
+      "https://static.pw.live/5eb393ee95fab7468a79d189/950a54d5-8326-4720-882d-4b4a8e889aeb.pdf",
+      "https://d2bps9p1kiy4ka.cloudfront.net/5b09189f7285894d9130ccd0/3de514ac-de72-4e05-aa7c-14d7f0a4efb0.pdf",
+      "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS_BLOGS/211df036-d31d-4b1f-9695-d2a458168fa0.pdf"
+    ],
     "last_updated": "2026-02-27"
   }
 ]

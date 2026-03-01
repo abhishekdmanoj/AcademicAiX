@@ -42,5 +42,27 @@
     "academic_year": "2024-2025",
     "is_active": true,
     "last_checked": "2026-02-27"
+  },
+  {
+    "college": "NIT Delhi",
+    "program": "B.Tech Computer Science and Engineering",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/nitd_btech_cse_2025.pdf",
+    "source_url": "https://nitdelhi.ac.in/wp-content/uploads/2025/07/B.-Tech-CSE-Scheme-and-Syllabus_1.pdf",
+    "hash": "",
+    "academic_year": "2025-2026",
+    "is_active": true,
+    "last_checked": "2026-02-27"
+  },
+  {
+    "college": "University of Delhi",
+    "program": "B.Com (Hons.)",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/du_bcom_hons_2019.pdf",
+    "source_url": "https://www.du.ac.in/uploads/Revi_syll_19082019/19082019_31_July_Final_B.Com_hons_SYLLABUS.pdf",
+    "hash": "",
+    "academic_year": "2019-2020",
+    "is_active": true,
+    "last_checked": "2026-02-27"
   }
 ]
