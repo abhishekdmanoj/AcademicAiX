@@ -36,18 +36,17 @@ def extract_text_from_pdf(pdf_path):
 
 
 def clean_text(text):
-    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r"[ \t]+", " ", text)
     return text.strip()
 
 
-# ✅ FIXED FILTER (less aggressive)
 def is_generic_chunk(text):
     generic_keywords = [
         "vision",
         "mission",
         "articulation matrix",
         "list of electives",
-        "total credits"
+        "total credits",
     ]
     text_lower = text.lower()
     return any(keyword in text_lower for keyword in generic_keywords)
@@ -57,7 +56,7 @@ def chunk_text(text, max_chars=1000):
     text = clean_text(text)
 
     sections = re.split(
-        r'\n(?=[A-Z][A-Z\s]{3,}:)|\n\d+\s+[A-Z]',
+        r"\n(?=[A-Z][A-Z\s]{3,}:)|\n\d+\s+[A-Z]",
         text
     )
 
@@ -79,7 +78,6 @@ def chunk_text(text, max_chars=1000):
     if current_chunk:
         chunks.append(current_chunk.strip())
 
-    # ✅ Lowered minimum size from 200 → 80
     chunks = [
         c for c in chunks
         if len(c) > 80 and not is_generic_chunk(c)
@@ -89,10 +87,12 @@ def chunk_text(text, max_chars=1000):
 
 
 def build_syllabus_index():
-    print("🚀 Building PROGRAM-LEVEL syllabus index...")
+    print("=" * 60)
+    print("Building PROGRAM-LEVEL syllabus index...")
+    print("=" * 60)
 
     if not os.path.exists(REGISTRY_PATH):
-        print("❌ registry.json not found.")
+        print("ERROR: registry.json not found.")
         return
 
     with open(REGISTRY_PATH, "r") as f:
@@ -115,32 +115,23 @@ def build_syllabus_index():
         file_path = os.path.join(PROJECT_ROOT, relative_path)
 
         if not os.path.exists(file_path):
-            print(f"❌ File not found: {file_path}")
+            print(f"WARNING: File not found -> {file_path}")
             continue
 
-        print(f"\n📄 Processing {college} - {program}")
+        print(f"\nProcessing: {college} - {program}")
 
         new_hash = compute_sha256(file_path)
         entry["hash"] = new_hash
         entry["last_checked"] = str(datetime.now().date())
 
-        # 🔍 TEXT DEBUG
         text = extract_text_from_pdf(file_path)
-        print(f"🔍 Raw text length: {len(text)}")
-        print(f"🔍 First 500 characters:\n{text[:500]}\n")
-
         chunks = chunk_text(text)
 
-        # 🔍 CHUNK DEBUG
-        print(f"  → {len(chunks)} chunks survived filtering")
-
-        for i, chunk in enumerate(chunks[:3]):
-            print(f"  Chunk {i+1}: {chunk[:120]}\n")
-
         if not chunks:
-            print(f"⚠ No valid chunks for {program} — skipping.")
+            print(f"WARNING: No valid chunks found for {program}. Skipping.")
             continue
 
+        # Progress bar remains inside embed_chunks()
         embeddings = embed_chunks(chunks, model)
         embeddings = np.array(embeddings).astype("float32")
 
@@ -160,7 +151,7 @@ def build_syllabus_index():
         })
 
     if not program_vectors:
-        print("❌ No program vectors generated.")
+        print("ERROR: No program vectors generated.")
         return
 
     program_vectors = np.array(program_vectors).astype("float32")
@@ -179,7 +170,8 @@ def build_syllabus_index():
     with open(REGISTRY_PATH, "w") as f:
         json.dump(registry, f, indent=2)
 
-    print("\n✅ PROGRAM-LEVEL syllabus index built successfully!")
+    print("\nIndex built successfully.")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
