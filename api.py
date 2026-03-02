@@ -63,6 +63,8 @@ def normalize(text):
 # ----------------------------
 class InterestRequest(BaseModel):
     interest: str
+    country: str | None = None
+    state: str | None = None
 
 
 class ProgramRequest(BaseModel):
@@ -77,10 +79,12 @@ class ProgramRequest(BaseModel):
 def rank(req: InterestRequest):
 
     results = rank_universities(
-        req.interest,
-        model,
-        syll_index,
-        syll_meta
+        interest=req.interest,
+        model=model,
+        syll_index=syll_index,
+        syll_meta=syll_meta,
+        country=req.country,
+        state=req.state
     )
 
     cleaned = []
@@ -150,7 +154,7 @@ def program_details(req: ProgramRequest):
         return {"error": "Program not found in metadata."}
 
     # ----------------------------
-    # Unified Response (NEW STRUCTURE)
+    # Unified Response
     # ----------------------------
     return {
         "college": req.college,

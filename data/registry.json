@@ -7,6 +7,8 @@
     "source_url": "https://nitc.ac.in/imgserver/uploads/attachments/Ed__bcea6879-6528-4204-99ce-784cbbd19b78_.pdf",
     "hash": "0148739c2dd6b44f27c25b6e76548c73d89f515ec2d5292235e2fe1d3bd3b5f4",
     "academic_year": "2023",
+    "country": "India",
+    "state": "Kerala",
     "is_active": true,
     "last_checked": "2026-02-27"
   },
@@ -18,6 +20,8 @@
     "source_url": "https://nitdelhi.ac.in/wp-content/uploads/2025/07/NBA_MCA-Scheme-Syllabus.docx.pdf",
     "hash": "4520b208556e312e146a5af8a48e462bc73b4d9257ce7d68dd616df64c8e8154",
     "academic_year": "2025-2026",
+    "country": "India",
+    "state": "Delhi",
     "is_active": true,
     "last_checked": "2026-02-27"
   },
@@ -29,6 +33,8 @@
     "source_url": "https://rajagiri.edu/academic-syllabus/mba",
     "hash": "f60ae500e242a0486dbbb9b0c7a17299bf09a870f8e55e8e112fbdd6d67521b5",
     "academic_year": "2024-2025",
+    "country": "India",
+    "state": "Kerala",
     "is_active": true,
     "last_checked": "2026-02-27"
   },
@@ -40,6 +46,8 @@
     "source_url": "https://www.du.ac.in/uploads/RevisedSyllabi1/Annexure-170%20(B.A.%20(Hons.)%20Economics).pdf",
     "hash": "92ce7afaac5860b15ff709d25628175d5171813d7acec46fb47995b8c56a9f03",
     "academic_year": "2024-2025",
+    "country": "India",
+    "state": "Delhi",
     "is_active": true,
     "last_checked": "2026-02-27"
   },
@@ -51,6 +59,8 @@
     "source_url": "https://nitdelhi.ac.in/wp-content/uploads/2025/07/B.-Tech-CSE-Scheme-and-Syllabus_1.pdf",
     "hash": "",
     "academic_year": "2025-2026",
+    "country": "India",
+    "state": "Delhi",
     "is_active": true,
     "last_checked": "2026-02-27"
   },
@@ -62,6 +72,8 @@
     "source_url": "https://www.du.ac.in/uploads/Revi_syll_19082019/19082019_31_July_Final_B.Com_hons_SYLLABUS.pdf",
     "hash": "",
     "academic_year": "2019-2020",
+    "country": "India",
+    "state": "Delhi",
     "is_active": true,
     "last_checked": "2026-02-27"
   }
