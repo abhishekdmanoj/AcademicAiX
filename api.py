@@ -78,13 +78,14 @@ class ProgramRequest(BaseModel):
 @app.post("/rank")
 def rank(req: InterestRequest):
 
+    # ✅ FIXED — positional arguments only
     results = rank_universities(
-        interest=req.interest,
-        model=model,
-        syll_index=syll_index,
-        syll_meta=syll_meta,
-        country=req.country,
-        state=req.state
+        req.interest,
+        model,
+        syll_index,
+        syll_meta,
+        req.country,
+        req.state
     )
 
     cleaned = []
@@ -107,9 +108,6 @@ def rank(req: InterestRequest):
 @app.post("/program-details")
 def program_details(req: ProgramRequest):
 
-    # ----------------------------
-    # Load Registry (for syllabus path)
-    # ----------------------------
     registry_path = os.path.join(PROJECT_ROOT, "data", "registry.json")
 
     if not os.path.exists(registry_path):
@@ -129,9 +127,6 @@ def program_details(req: ProgramRequest):
             syllabus_path = entry.get("file_path")
             break
 
-    # ----------------------------
-    # Load University Metadata (New Structure)
-    # ----------------------------
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
 
     if not os.path.exists(metadata_path):
@@ -153,9 +148,6 @@ def program_details(req: ProgramRequest):
     if not info:
         return {"error": "Program not found in metadata."}
 
-    # ----------------------------
-    # Unified Response
-    # ----------------------------
     return {
         "college": req.college,
         "program": req.program,
