@@ -10,7 +10,7 @@
     "country": "India",
     "state": "Kerala",
     "is_active": true,
-    "last_checked": "2026-02-27"
+    "last_checked": "2026-03-03"
   },
   {
     "college": "NIT Delhi",
@@ -23,7 +23,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-02-27"
+    "last_checked": "2026-03-03"
   },
   {
     "college": "Rajagiri College of Social Sciences",
@@ -49,7 +49,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-02-27"
+    "last_checked": "2026-03-03"
   },
   {
     "college": "NIT Delhi",
@@ -57,12 +57,12 @@
     "degree_level": "UG",
     "file_path": "data/raw_pdfs/nitd_btech_cse_2025.pdf",
     "source_url": "https://nitdelhi.ac.in/wp-content/uploads/2025/07/B.-Tech-CSE-Scheme-and-Syllabus_1.pdf",
-    "hash": "",
+    "hash": "3e03e372fd4951db9f1a3d0f7b45492d0381e666bf72f88f0fd6667e84e7b9a7",
     "academic_year": "2025-2026",
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-02-27"
+    "last_checked": "2026-03-03"
   },
   {
     "college": "University of Delhi",
@@ -70,11 +70,11 @@
     "degree_level": "UG",
     "file_path": "data/raw_pdfs/du_bcom_hons_2019.pdf",
     "source_url": "https://www.du.ac.in/uploads/Revi_syll_19082019/19082019_31_July_Final_B.Com_hons_SYLLABUS.pdf",
-    "hash": "",
+    "hash": "5c17e3887dfa98f3d9c6093661e0785187d66f7d12a5cbb31a149c9ee88121d6",
     "academic_year": "2019-2020",
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-02-27"
+    "last_checked": "2026-03-03"
   }
 ]

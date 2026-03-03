@@ -2,4 +2,4 @@ __pycache__/
 *.pyc
 .env
 .venv/
-vector_store/
+vector_store/fix_hashes.py 

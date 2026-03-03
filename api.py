@@ -4,11 +4,10 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-
 from embeddings.model import load_embedding_model
 from runtime.index_loader import load_syllabus_index
 from runtime.ranking_service import rank_universities
-
+from ingestion.admin_routes import router as admin_router
 
 app = FastAPI(title="AcademicAiX")
 
@@ -30,6 +29,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ----------------------------
+# Admin Router
+# ----------------------------
+app.include_router(admin_router)
 
 # ----------------------------
 # Global Runtime Objects
@@ -77,8 +81,6 @@ class ProgramRequest(BaseModel):
 # ----------------------------
 @app.post("/rank")
 def rank(req: InterestRequest):
-
-    # ✅ FIXED — positional arguments only
     results = rank_universities(
         req.interest,
         model,
@@ -87,9 +89,7 @@ def rank(req: InterestRequest):
         req.country,
         req.state
     )
-
     cleaned = []
-
     for r in results:
         cleaned.append({
             "college": r["college"],
@@ -98,7 +98,6 @@ def rank(req: InterestRequest):
             "alignment_strength": r["explainability"]["alignment_strength"],
             "top_units": r["top_units"]
         })
-
     return {"results": cleaned}
 
 
@@ -107,9 +106,7 @@ def rank(req: InterestRequest):
 # ----------------------------
 @app.post("/program-details")
 def program_details(req: ProgramRequest):
-
     registry_path = os.path.join(PROJECT_ROOT, "data", "registry.json")
-
     if not os.path.exists(registry_path):
         return {"error": "Registry not found."}
 
@@ -117,7 +114,6 @@ def program_details(req: ProgramRequest):
         registry = json.load(f)
 
     syllabus_path = None
-
     for entry in registry:
         if (
             normalize(entry.get("college")) == normalize(req.college)
@@ -128,7 +124,6 @@ def program_details(req: ProgramRequest):
             break
 
     metadata_path = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
-
     if not os.path.exists(metadata_path):
         return {"error": "Metadata not found."}
 
@@ -136,7 +131,6 @@ def program_details(req: ProgramRequest):
         metadata_list = json.load(f)
 
     info = None
-
     for entry in metadata_list:
         if (
             normalize(entry.get("college")) == normalize(req.college)

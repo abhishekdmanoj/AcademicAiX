@@ -5,7 +5,6 @@ import requests
 from datetime import datetime
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-
 REGISTRY_PATH = os.path.join(PROJECT_ROOT, "data", "registry.json")
 TEMP_DOWNLOAD = os.path.join(PROJECT_ROOT, "temp_latest.pdf")
 
@@ -19,7 +18,7 @@ def compute_sha256(file_path):
 
 
 def download_pdf(url, save_path):
-    response = requests.get(url, stream=True)
+    response = requests.get(url, stream=True, timeout=15)
     response.raise_for_status()
     with open(save_path, "wb") as f:
         for chunk in response.iter_content(8192):
@@ -48,6 +47,9 @@ def main():
         if not source_url:
             print(f"⚠ No source_url for {program}")
             continue
+        if not source_url.endswith(".pdf"):
+            print(f"⚠ {program} source_url is not a direct PDF, skipping.")
+            continue
 
         print(f"📄 Checking {program}...")
 
@@ -57,21 +59,14 @@ def main():
 
             if new_hash != entry["hash"]:
                 print("🚨 Update detected!")
-
-                # Deactivate old version
                 entry["is_active"] = False
-
-                # Create new version entry
                 new_entry = entry.copy()
                 new_entry["hash"] = new_hash
                 new_entry["is_active"] = True
                 new_entry["academic_year"] = "UPDATED"
                 new_entry["last_checked"] = str(datetime.now().date())
-
                 registry.append(new_entry)
-
                 updated = True
-
             else:
                 print("✅ No changes detected.")
                 entry["last_checked"] = str(datetime.now().date())
@@ -85,7 +80,14 @@ def main():
         json.dump(registry, f, indent=2)
 
     if updated:
-        print("\n♻ Updates detected. Run build_syllabus_index to rebuild FAISS.")
+        print("\n♻ Updates detected. Rebuilding FAISS index...")
+        try:
+            from offline_pipeline.build_syllabus_index import build_syllabus_index
+            build_syllabus_index()
+            print("✅ Index rebuilt successfully.")
+        except Exception as e:
+            print(f"❌ Index rebuild failed: {e}")
+            print("   Run manually: python -m offline_pipeline.build_syllabus_index")
     else:
         print("\n✔ All syllabi are up to date.")
 
