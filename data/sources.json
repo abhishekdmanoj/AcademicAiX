@@ -1,0 +1,188 @@
+[
+  {
+    "college": "NIT Calicut",
+    "country": "India",
+    "state": "Kerala",
+    "type": "direct_pdf",
+    "urls": [
+      "https://nitc.ac.in/imgserver/uploads/attachments/Ed__bcea6879-6528-4204-99ce-784cbbd19b78_.pdf"
+    ]
+  },
+  {
+    "college": "NIT Delhi",
+    "country": "India",
+    "state": "Delhi",
+    "type": "direct_pdf",
+    "urls": [
+      "https://nitdelhi.ac.in/wp-content/uploads/2025/07/NBA_MCA-Scheme-Syllabus.docx.pdf",
+      "https://nitdelhi.ac.in/wp-content/uploads/2025/07/B.-Tech-CSE-Scheme-and-Syllabus_1.pdf"
+    ]
+  },
+  {
+    "college": "University of Delhi",
+    "country": "India",
+    "state": "Delhi",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.du.ac.in/uploads/RevisedSyllabi1/Annexure-170%20(B.A.%20(Hons.)%20Economics).pdf",
+      "https://www.du.ac.in/uploads/Revi_syll_19082019/19082019_31_July_Final_B.Com_hons_SYLLABUS.pdf"
+    ]
+  },
+  {
+    "college": "Rajagiri College of Social Sciences",
+    "country": "India",
+    "state": "Kerala",
+    "type": "direct_pdf",
+    "urls": [
+      "https://rajagiri.edu/wp-content/uploads/2024/01/MBA-Syllabus-2024.pdf"
+    ]
+  },
+  {
+    "college": "Amrita Vishwa Vidyapeetham",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "type": "direct_pdf",
+    "urls": [
+      "https://webfiles.amrita.edu/2024/12/T4KEw4n8-290-amrita-btech-cse-curriculum-syllabus-2023.pdf"
+    ]
+  },
+  {
+    "college": "University of Burdwan",
+    "country": "India",
+    "state": "West Bengal",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.buruniv.ac.in/Downloads/Syllabus/Syllabus_BSCCOMPSC_NEP2023-2024.pdf"
+    ]
+  },
+  {
+    "college": "Bagalkot University",
+    "country": "India",
+    "state": "Karnataka",
+    "type": "direct_pdf",
+    "urls": [
+      "https://bgku.ac.in/wp-content/uploads/2024/07/COMPUTER-SCIENCE-SYLLABUS-FOR-B.Sc-I-II-SEMESTER-2024-25.pdf"
+    ]
+  },
+  {
+    "college": "National University of Singapore",
+    "country": "Singapore",
+    "state": "Singapore",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.comp.nus.edu.sg/wp-content/uploads/2024/07/SoC_Curriculum_2024.pdf"
+    ]
+  },
+  {
+    "college": "TU Delft",
+    "country": "Netherlands",
+    "state": "South Holland",
+    "type": "direct_pdf",
+    "urls": [
+      "https://filelist.tudelft.nl/TUDelft/Onderwijs/Opleidingen/Bachelor/Computer%20science%20engineering/new_site/curriculum.pdf"
+    ]
+  },
+  {
+    "college": "University of Toronto",
+    "country": "Canada",
+    "state": "Ontario",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.cs.toronto.edu/dcs/ugdocs/course-outlines/2024/Fall/CSC108H1F-Fall2024.pdf",
+      "https://www.cs.toronto.edu/dcs/ugdocs/course-outlines/2024/Fall/CSC209H1F-Fall2024.pdf"
+    ]
+  },
+  {
+    "college": "McGill University",
+    "country": "Canada",
+    "state": "Quebec",
+    "type": "direct_pdf",
+    "urls": [
+      "https://coursecatalogue.mcgill.ca/en/undergraduate/science/programs/computer-science/computer-science.pdf",
+      "https://coursecatalogue.mcgill.ca/en/undergraduate/science/programs/computer-science/computer-science-major-bsc/computer-science-major-bsc.pdf"
+    ]
+  },
+  {
+    "college": "Stanford University",
+    "country": "USA",
+    "state": "California",
+    "type": "direct_pdf",
+    "urls": [
+      "https://stanford.edu/class/archive/cs/cs106x/cs106x.1162/handouts/course-information.pdf",
+      "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/stanford/catalog-pdf/zf3zJ9hlJ20YDigFdyP3/wo1xHUCDQyS0WTjQRfS3ZuGXH/COMPUTSCI-2024-09-26-20-33-55.pdf"
+    ]
+  },
+  {
+    "college": "University of Oxford",
+    "country": "United Kingdom",
+    "state": "England",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.cs.ox.ac.uk/files/14765/Handbook%202024%20Parts%20A%20&%20B.pdf",
+      "https://www.cs.ox.ac.uk/files/15040/General%20Handbook%202025.pdf"
+    ]
+  },
+  {
+    "college": "University of Edinburgh",
+    "country": "United Kingdom",
+    "state": "Scotland",
+    "type": "direct_pdf",
+    "urls": [
+      "https://study.ed.ac.uk/sites/default/files/2025-02/Undergraduate%20guide%202026.pdf"
+    ]
+  },
+  {
+    "college": "University of Sydney",
+    "country": "Australia",
+    "state": "New South Wales",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.sydney.edu.au/content/dam/corporate/documents/faculty-of-science/study/plan_your_science_degree.pdf"
+    ]
+  },
+  {
+    "college": "UNSW College",
+    "country": "Australia",
+    "state": "New South Wales",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.unswcollege.edu.au/content/dam/pdfs/unsw-college/diploma-of-computer-science-program-structure-course-outlines.pdf"
+    ]
+  },
+  {
+    "college": "University of Cape Town",
+    "country": "South Africa",
+    "state": "Western Cape",
+    "type": "direct_pdf",
+    "urls": [
+      "https://commerce.uct.ac.za/sites/default/files/media/documents/commerce_uct_ac_za/50/Computer%20Science%20CB004CSC05.pdf"
+    ]
+  },
+  {
+    "college": "ACM IEEE Joint Task Force",
+    "country": "International",
+    "state": "",
+    "type": "direct_pdf",
+    "urls": [
+      "https://ieeecs-media.computer.org/media/education/reports/CS2023.pdf"
+    ]
+  },
+  {
+    "college": "IIT Bombay",
+    "country": "India",
+    "state": "Maharashtra",
+    "type": "page",
+    "urls": [
+      "https://www.cse.iitb.ac.in/academics/ugcurriculum.php"
+    ]
+  },
+  {
+    "college": "IIT Kharagpur",
+    "country": "India",
+    "state": "West Bengal",
+    "type": "page",
+    "urls": [
+      "https://erp.iitkgp.ac.in/ERPWebServices/curricula/CurriculaSubjectsList.jsp?stuType=UG"
+    ]
+  }
+]

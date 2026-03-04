@@ -264,3 +264,17 @@ async def toggle_program(
             })
 
     raise HTTPException(status_code=404, detail="Program not found")
+
+
+@router.post("/bulk-scrape")
+async def bulk_scrape(background_tasks: BackgroundTasks):
+    """Trigger bulk download from all sources in sources.json"""
+    try:
+        from ingestion.pdf_downloader import bulk_download
+        background_tasks.add_task(bulk_download)
+        return JSONResponse({
+            "success": True,
+            "message": "Bulk scrape started. Check server logs for progress."
+        })
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

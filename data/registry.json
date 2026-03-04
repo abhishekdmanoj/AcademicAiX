@@ -10,7 +10,7 @@
     "country": "India",
     "state": "Kerala",
     "is_active": true,
-    "last_checked": "2026-03-03"
+    "last_checked": "2026-03-04"
   },
   {
     "college": "NIT Delhi",
@@ -23,7 +23,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-03"
+    "last_checked": "2026-03-04"
   },
   {
     "college": "Rajagiri College of Social Sciences",
@@ -36,7 +36,7 @@
     "country": "India",
     "state": "Kerala",
     "is_active": true,
-    "last_checked": "2026-02-27"
+    "last_checked": "2026-03-04"
   },
   {
     "college": "University of Delhi",
@@ -49,7 +49,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-03"
+    "last_checked": "2026-03-04"
   },
   {
     "college": "NIT Delhi",
@@ -62,7 +62,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-03"
+    "last_checked": "2026-03-04"
   },
   {
     "college": "University of Delhi",
@@ -75,6 +75,240 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-03"
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "Amrita Vishwa Vidyapeetham",
+    "program": "B.Tech Computer Science and Engineering",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/Amrita_Vishwa_Vidyapeetham_MBATORE.pdf",
+    "source_url": "https://webfiles.amrita.edu/2024/12/T4KEw4n8-290-amrita-btech-cse-curriculum-syllabus-2023.pdf",
+    "hash": "a92c836eae1322741c9f52ac2c58a4b8944454275d534f5dd4f78e45fe0be46b",
+    "academic_year": "",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Burdwan",
+    "program": "B.Sc. Computer Science",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Burdwan_Syllabus_BSCCOMPSC_NEP2023_2024.pdf",
+    "source_url": "https://www.buruniv.ac.in/Downloads/Syllabus/Syllabus_BSCCOMPSC_NEP2023-2024.pdf",
+    "hash": "7b2c743d1735b7a50388e0f0b913e051a6a5e26051108876d17c6d4a8a07161a",
+    "academic_year": "",
+    "country": "India",
+    "state": "West Bengal",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "Bagalkot University",
+    "program": "B.Sc. With Computer Science",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Bagalkot_University_B_Sc__With_Computer_Science.pdf",
+    "source_url": "https://bgku.ac.in/wp-content/uploads/2024/07/COMPUTER-SCIENCE-SYLLABUS-FOR-B.Sc-I-II-SEMESTER-2024-25.pdf",
+    "hash": "91dc6cdd349f02c01d193a5db278288edd005c8423b44348137aba27e373a63d",
+    "academic_year": "",
+    "country": "India",
+    "state": "Karnataka",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "National University of Singapore",
+    "program": "CS Curriculum",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/National_University_of_Singapore_CS_Curriculum.pdf",
+    "source_url": "https://www.comp.nus.edu.sg/wp-content/uploads/2024/07/SoC_Curriculum_2024.pdf",
+    "hash": "555b6b61a3be87068c5a904e490e310d89f38aa69b0be5a16edc88341a40fb3a",
+    "academic_year": "",
+    "country": "Singapore",
+    "state": "Singapore",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "TU Delft",
+    "program": "Computer Science and Engineering",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/TU_Delft_Machine_Learning.pdf",
+    "source_url": "https://filelist.tudelft.nl/TUDelft/Onderwijs/Opleidingen/Bachelor/Computer%20science%20engineering/new_site/curriculum.pdf",
+    "hash": "d9878ceee09e828668283eceea41c4d25664f80873246e45a4fd27850fd6109e",
+    "academic_year": "",
+    "country": "Netherlands",
+    "state": "South Holland",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Toronto",
+    "program": "CSC108H1F Fall2024",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Toronto_CSC108H1F_Fall2024.pdf",
+    "source_url": "https://www.cs.toronto.edu/dcs/ugdocs/course-outlines/2024/Fall/CSC108H1F-Fall2024.pdf",
+    "hash": "c301713e75631e0192eb8dd0e4fde8c512b7f94697982defd3127b173f7f2e52",
+    "academic_year": "",
+    "country": "Canada",
+    "state": "Ontario",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Toronto",
+    "program": "Software Tools and Systems",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Toronto_Software_Tools_and_Systems.pdf",
+    "source_url": "https://www.cs.toronto.edu/dcs/ugdocs/course-outlines/2024/Fall/CSC209H1F-Fall2024.pdf",
+    "hash": "b02223940b6aac467e3fa3957d9c4c3e301165a6005b88e92961f148abfb0a65",
+    "academic_year": "",
+    "country": "Canada",
+    "state": "Ontario",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "McGill University",
+    "program": "Computer Science",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/McGill_University_Computer_Science.pdf",
+    "source_url": "https://coursecatalogue.mcgill.ca/en/undergraduate/science/programs/computer-science/computer-science.pdf",
+    "hash": "019801f41f3a8f707766c491c61cdae1864627c29d523363cde43ef8d4e735dd",
+    "academic_year": "",
+    "country": "Canada",
+    "state": "Quebec",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "McGill University",
+    "program": "B.Sc. Computer Science Major",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/McGill_University_B_Sc__This_program_is_o.pdf",
+    "source_url": "https://coursecatalogue.mcgill.ca/en/undergraduate/science/programs/computer-science/computer-science-major-bsc/computer-science-major-bsc.pdf",
+    "hash": "a9574ec6765af4d6f751429a8dcb1a6f8710c8557558d523705f013dd2611e99",
+    "academic_year": "",
+    "country": "Canada",
+    "state": "Quebec",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "Stanford University",
+    "program": "CS106X: Programming Abstractions in C++",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Stanford_University_CS106X__Programming_Abstractions_in_C.pdf",
+    "source_url": "https://stanford.edu/class/archive/cs/cs106x/cs106x.1162/handouts/course-information.pdf",
+    "hash": "4d43e1a69516a9b993bdf6b1b7a0f519217718e623578edd3bfee2eccb9b2a2b",
+    "academic_year": "",
+    "country": "USA",
+    "state": "California",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "Stanford University",
+    "program": "Computer Science Department",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Stanford_University_Computer_Science_Department.pdf",
+    "source_url": "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/stanford/catalog-pdf/zf3zJ9hlJ20YDigFdyP3/wo1xHUCDQyS0WTjQRfS3ZuGXH/COMPUTSCI-2024-09-26-20-33-55.pdf",
+    "hash": "6fdaf0b37238174b9ea817062a2a49fda7831d9e75ea3a98cceb78989ad9a96c",
+    "academic_year": "",
+    "country": "USA",
+    "state": "California",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Oxford",
+    "program": "Computer Science & Philosophy",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Oxford_Computer_Science___Philosophy.pdf",
+    "source_url": "https://www.cs.ox.ac.uk/files/14765/Handbook%202024%20Parts%20A%20&%20B.pdf",
+    "hash": "0bf6f21d8820b81256837759dd2186691a30be8026527c45468e941821ec13db",
+    "academic_year": "",
+    "country": "United Kingdom",
+    "state": "England",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Oxford",
+    "program": "Computer Science",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Oxford_Computer_Science.pdf",
+    "source_url": "https://www.cs.ox.ac.uk/files/15040/General%20Handbook%202025.pdf",
+    "hash": "d24a06006be96bdee6e946d44f3672e6c35c207de10dbcde4a75c8487d93d5a4",
+    "academic_year": "",
+    "country": "United Kingdom",
+    "state": "England",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Edinburgh",
+    "program": "Undergraduate Programs Guide",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Edinburgh_Undergraduate_20guide_202026.pdf",
+    "source_url": "https://study.ed.ac.uk/sites/default/files/2025-02/Undergraduate%20guide%202026.pdf",
+    "hash": "d1f35ec6fcacca762d9a3e873637fb2a5900b530737e6e32572d9e1fc61b53dc",
+    "academic_year": "",
+    "country": "United Kingdom",
+    "state": "Scotland",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Sydney",
+    "program": "Science Degree Programs",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Sydney_plan_your_science_degree.pdf",
+    "source_url": "https://www.sydney.edu.au/content/dam/corporate/documents/faculty-of-science/study/plan_your_science_degree.pdf",
+    "hash": "730c8d3329516e405bc351451fb8c6d2157da7809516ac51f87636707a134cc5",
+    "academic_year": "",
+    "country": "Australia",
+    "state": "New South Wales",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "UNSW College",
+    "program": "Computer Science",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/UNSW_College_Computer_Science.pdf",
+    "source_url": "https://www.unswcollege.edu.au/content/dam/pdfs/unsw-college/diploma-of-computer-science-program-structure-course-outlines.pdf",
+    "hash": "24305a50054106b0a957a8c544db5493f5954b8bf103cb61c72cbba8fa6606bc",
+    "academic_year": "",
+    "country": "Australia",
+    "state": "New South Wales",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "University of Cape Town",
+    "program": "BBusSc - Computer Science",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/University_of_Cape_Town_BBusSc_-_Computer_Science.pdf",
+    "source_url": "https://commerce.uct.ac.za/sites/default/files/media/documents/commerce_uct_ac_za/50/Computer%20Science%20CB004CSC05.pdf",
+    "hash": "8e345c9da50b54cda1c8d88b5a548ee14278848337f16924fbafec2816cc340f",
+    "academic_year": "",
+    "country": "South Africa",
+    "state": "Western Cape",
+    "is_active": true,
+    "last_checked": "2026-03-04"
+  },
+  {
+    "college": "ACM IEEE Joint Task Force",
+    "program": "CS2023",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/ACM_IEEE_Joint_Task_Force_CS2023.pdf",
+    "source_url": "https://ieeecs-media.computer.org/media/education/reports/CS2023.pdf",
+    "hash": "c7cc63986e866b7cdda60c3f02dea83099a1d975c628a02b3f8bf50c07f524dd",
+    "academic_year": "",
+    "country": "International",
+    "state": "",
+    "is_active": true,
+    "last_checked": "2026-03-04"
   }
 ]
