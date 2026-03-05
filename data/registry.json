@@ -80,7 +80,7 @@
   {
     "college": "Amrita Vishwa Vidyapeetham",
     "program": "B.Tech Computer Science and Engineering",
-    "degree_level": "PG",
+    "degree_level": "UG",
     "file_path": "data/raw_pdfs/Amrita_Vishwa_Vidyapeetham_MBATORE.pdf",
     "source_url": "https://webfiles.amrita.edu/2024/12/T4KEw4n8-290-amrita-btech-cse-curriculum-syllabus-2023.pdf",
     "hash": "a92c836eae1322741c9f52ac2c58a4b8944454275d534f5dd4f78e45fe0be46b",
@@ -133,7 +133,7 @@
     "college": "TU Delft",
     "program": "Computer Science and Engineering",
     "degree_level": "PG",
-    "file_path": "data/raw_pdfs/TU_Delft_Machine_Learning.pdf",
+    "file_path": "data/raw_pdfs/TU_Delft_Computer_Science_and_Engineering.pdf",
     "source_url": "https://filelist.tudelft.nl/TUDelft/Onderwijs/Opleidingen/Bachelor/Computer%20science%20engineering/new_site/curriculum.pdf",
     "hash": "d9878ceee09e828668283eceea41c4d25664f80873246e45a4fd27850fd6109e",
     "academic_year": "",
@@ -144,7 +144,7 @@
   },
   {
     "college": "University of Toronto",
-    "program": "CSC108H1F Fall2024",
+    "program": "Computer Programming",
     "degree_level": "UG",
     "file_path": "data/raw_pdfs/University_of_Toronto_CSC108H1F_Fall2024.pdf",
     "source_url": "https://www.cs.toronto.edu/dcs/ugdocs/course-outlines/2024/Fall/CSC108H1F-Fall2024.pdf",

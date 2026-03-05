@@ -8,6 +8,7 @@ from embeddings.model import load_embedding_model
 from runtime.index_loader import load_syllabus_index
 from runtime.ranking_service import rank_universities
 from ingestion.admin_routes import router as admin_router
+from runtime.chat_routes import router as chat_router
 
 app = FastAPI(title="AcademicAiX")
 
@@ -31,9 +32,10 @@ app.add_middleware(
 )
 
 # ----------------------------
-# Admin Router
+# Routers
 # ----------------------------
 app.include_router(admin_router)
+app.include_router(chat_router)
 
 # ----------------------------
 # Global Runtime Objects
