@@ -355,3 +355,88 @@ async def update_program_registry(req: RegistryUpdate):
         "success": True,
         "message": f"Registry updated for {req.college} - {req.program}"
     })
+
+
+# ----------------------------
+# GET /admin/sources
+# ----------------------------
+
+SOURCES_PATH = os.path.join(PROJECT_ROOT, "data", "sources.json")
+
+@router.get("/sources")
+async def get_sources():
+    sources = load_json(SOURCES_PATH)
+    return JSONResponse({"success": True, "sources": sources})
+
+
+# ----------------------------
+# POST /admin/sources
+# ----------------------------
+
+class SourceEntry(BaseModel):
+    college: str
+    country: Optional[str] = "India"
+    state: Optional[str] = ""
+    type: Optional[str] = "direct_pdf"
+    urls: List[str] = []
+
+class SourceUpdate(BaseModel):
+    original_college: Optional[str] = None
+    source: SourceEntry
+
+@router.post("/sources")
+async def upsert_source(req: SourceUpdate):
+    sources = load_json(SOURCES_PATH)
+
+    if req.original_college:
+        # Update existing
+        found = False
+        for entry in sources:
+            if entry.get("college", "").lower() == req.original_college.lower():
+                entry["college"] = req.source.college
+                entry["country"] = req.source.country
+                entry["state"] = req.source.state
+                entry["type"] = req.source.type
+                entry["urls"] = req.source.urls
+                found = True
+                break
+        if not found:
+            raise HTTPException(status_code=404, detail="Source not found")
+        msg = f"Source updated for {req.source.college}"
+    else:
+        # Add new
+        for entry in sources:
+            if entry.get("college", "").lower() == req.source.college.lower():
+                raise HTTPException(status_code=400, detail=f"{req.source.college} already exists in sources")
+        sources.append({
+            "college": req.source.college,
+            "country": req.source.country,
+            "state": req.source.state,
+            "type": req.source.type,
+            "urls": req.source.urls
+        })
+        msg = f"Source added for {req.source.college}"
+
+    with open(SOURCES_PATH, "w") as f:
+        json.dump(sources, f, indent=2)
+
+    return JSONResponse({"success": True, "message": msg})
+
+
+# ----------------------------
+# DELETE /admin/sources/{college}
+# ----------------------------
+
+@router.delete("/sources/{college}")
+async def delete_source(college: str):
+    sources = load_json(SOURCES_PATH)
+    original_len = len(sources)
+    sources = [s for s in sources if s.get("college", "").lower() != college.lower()]
+
+    if len(sources) == original_len:
+        raise HTTPException(status_code=404, detail="Source not found")
+
+    with open(SOURCES_PATH, "w") as f:
+        json.dump(sources, f, indent=2)
+
+    return JSONResponse({"success": True, "message": f"Source removed: {college}"})
