@@ -184,5 +184,23 @@
     "urls": [
       "https://erp.iitkgp.ac.in/ERPWebServices/curricula/CurriculaSubjectsList.jsp?stuType=UG"
     ]
+  },
+  {
+    "college": "University of Madras",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "type": "direct_pdf",
+    "urls": [
+      "https://www.unom.ac.in/webportal/uploads/naac/1/additional/77%20M.Sc.%20Biochemistry.pdf"
+    ]
+  },
+  {
+    "college": "Florida Atlantic University",
+    "country": "USA",
+    "state": "Florida",
+    "type": "page",
+    "urls": [
+      "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/"
+    ]
   }
 ]

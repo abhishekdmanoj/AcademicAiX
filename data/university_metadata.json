@@ -199,5 +199,410 @@
     "entrance_exams": [],
     "pyq_links": [],
     "last_updated": "2026-03-04"
+  },
+  {
+    "college": "UNIVERSITY OF MADRAS",
+    "program": "M.Sc BIOCHEMISTRY ",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "GATE",
+        "website": "https://gate.iitk.ac.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930randomized algorithms",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cgs1571computer app2",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4935sr seminar",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4401digital img processing",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "map4260intro queueing theory",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4102structured computer architecture",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3540intro database structures",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "McA",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "NIMCET",
+        "website": "https://nimcet.admissions.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4854cutting edge web technologies",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3813intro internet computing",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cen4400intro computersystems perf eval",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4420formal languages",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4028game programming",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4204cad based computer design",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4210intro vlsi design",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3530data structures algorithm analysis",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3014l foundationcs lab",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4331object oriented design",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930applied cryptography",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "egn4410c eng design1",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4400design analysis algorithms",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930intro security cryptography",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4610computer op systems",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cgs1570computer apps1",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930cryptographic eng",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "sta4821stochastic models cs",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4770intro data mining machine intelligence",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4703applied database systems",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4020programming languages",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4367graphical app dev",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4045python programming",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cnt4104intro data comm",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cen4010principles sw engineering",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda3201c intro logic design",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3014foundations cs",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4593comp programming",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4814web services",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4034computer animation",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda3331c intro microprocessor system",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4630artificial intelligence",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "egn4411c eng design2",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cnt4403intro data network security",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cen4214sw hw co design",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop2220intro programming c",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
   }
 ]

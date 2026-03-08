@@ -200,7 +200,7 @@ def process_source(source, registry):
             for pdf_url in pdf_links:
                 filename = os.path.basename(urlparse(pdf_url).path)
 
-                if not is_syllabus_filename(filename):
+                if source_type != "page" and not is_syllabus_filename(filename):
                     continue
 
                 save_path = os.path.join(DOWNLOAD_DIR, filename)

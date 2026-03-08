@@ -10,7 +10,7 @@
     "country": "India",
     "state": "Kerala",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "NIT Delhi",
@@ -23,7 +23,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "Rajagiri College of Social Sciences",
@@ -36,7 +36,7 @@
     "country": "India",
     "state": "Kerala",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Delhi",
@@ -49,7 +49,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "NIT Delhi",
@@ -62,7 +62,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Delhi",
@@ -75,7 +75,7 @@
     "country": "India",
     "state": "Delhi",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "Amrita Vishwa Vidyapeetham",
@@ -88,7 +88,7 @@
     "country": "India",
     "state": "Tamil Nadu",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Burdwan",
@@ -101,7 +101,7 @@
     "country": "India",
     "state": "West Bengal",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "Bagalkot University",
@@ -114,7 +114,7 @@
     "country": "India",
     "state": "Karnataka",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "National University of Singapore",
@@ -127,7 +127,7 @@
     "country": "Singapore",
     "state": "Singapore",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "TU Delft",
@@ -140,7 +140,7 @@
     "country": "Netherlands",
     "state": "South Holland",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Toronto",
@@ -153,7 +153,7 @@
     "country": "Canada",
     "state": "Ontario",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Toronto",
@@ -166,7 +166,7 @@
     "country": "Canada",
     "state": "Ontario",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "McGill University",
@@ -175,11 +175,11 @@
     "file_path": "data/raw_pdfs/McGill_University_Computer_Science.pdf",
     "source_url": "https://coursecatalogue.mcgill.ca/en/undergraduate/science/programs/computer-science/computer-science.pdf",
     "hash": "019801f41f3a8f707766c491c61cdae1864627c29d523363cde43ef8d4e735dd",
-    "academic_year": "",
+    "academic_year": "UPDATED",
     "country": "Canada",
     "state": "Quebec",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "McGill University",
@@ -188,11 +188,11 @@
     "file_path": "data/raw_pdfs/McGill_University_B_Sc__This_program_is_o.pdf",
     "source_url": "https://coursecatalogue.mcgill.ca/en/undergraduate/science/programs/computer-science/computer-science-major-bsc/computer-science-major-bsc.pdf",
     "hash": "a9574ec6765af4d6f751429a8dcb1a6f8710c8557558d523705f013dd2611e99",
-    "academic_year": "",
+    "academic_year": "UPDATED",
     "country": "Canada",
     "state": "Quebec",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "Stanford University",
@@ -205,7 +205,7 @@
     "country": "USA",
     "state": "California",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "Stanford University",
@@ -218,7 +218,7 @@
     "country": "USA",
     "state": "California",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Oxford",
@@ -231,7 +231,7 @@
     "country": "United Kingdom",
     "state": "England",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Oxford",
@@ -244,7 +244,7 @@
     "country": "United Kingdom",
     "state": "England",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Edinburgh",
@@ -257,7 +257,7 @@
     "country": "United Kingdom",
     "state": "Scotland",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Sydney",
@@ -270,7 +270,7 @@
     "country": "Australia",
     "state": "New South Wales",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "UNSW College",
@@ -283,7 +283,7 @@
     "country": "Australia",
     "state": "New South Wales",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "University of Cape Town",
@@ -296,7 +296,7 @@
     "country": "South Africa",
     "state": "Western Cape",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
   },
   {
     "college": "ACM IEEE Joint Task Force",
@@ -309,6 +309,591 @@
     "country": "International",
     "state": "",
     "is_active": true,
-    "last_checked": "2026-03-04"
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "UNIVERSITY OF MADRAS",
+    "program": "M.Sc BIOCHEMISTRY ",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/UNIVERSITY_OF_MADRAS_M_Sc_BIOCHEMISTRY.pdf",
+    "source_url": "https://www.unom.ac.in/webportal/uploads/naac/1/additional/77%20M.Sc.%20Biochemistry.pdf",
+    "hash": "2befc3237d8336b8ccebccb106cdc8a38a227e6242fefae8f69ff89cd8d6234e",
+    "academic_year": "",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "is_active": true,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930randomized algorithms",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4930randomized_algorithms.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4930randomized-algorithms.pdf",
+    "hash": "5cb039087d55cf9cea2d9917e967353c45f6c5f68525282ed7bf7477d978a2c7",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cgs1571computer app2",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cgs1571computer_app2.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cgs1571computer-app2.pdf",
+    "hash": "4271c3374825cc62bd81efe9bda7b07605cba528066340ec3351b4da3fda7cc4",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4935sr seminar",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4935sr_seminar.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4935sr-seminar.pdf",
+    "hash": "1edfdb556efbb8962a1accc2d82033b25512adb251ac8dd8dd4af1099cc63873",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4401digital img processing",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cap4401digital_img_processing.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cap4401digital-img-processing.pdf",
+    "hash": "5849b1b30f862fb8598ee4269da1cad2758d81182b22e343d0c0101545c5816d",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "map4260intro queueing theory",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_map4260intro_queueing_theory.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/map4260intro-queueing-theory.pdf",
+    "hash": "7854320e9bf1b4e572f05730c6621930188d15dcb21f5793a927a4a1cfc086fc",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4102structured computer architecture",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cda4102structured_computer_architecture.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cda4102structured-computer-architecture.pdf",
+    "hash": "b897e8b829a6f1dd29de545ae85fc98c1e2cd6f07a91ba945ba04d279d6a8e4f",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3540intro database structures",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop3540intro_database_structures.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop3540intro-database-structures.pdf",
+    "hash": "34b9744f4418a716c2f2ae198dfbd7563aeb2be9ab559a7c827ae4c9125b0b54",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "McA",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_McA.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cda4630intro-embedded-systems.pdf",
+    "hash": "ef5ce650f4cab53379367ba5aa25f98023ff2a3408f3ae11862724f22aa84027",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4854cutting edge web technologies",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4854cutting_edge_web_technologies.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4854cutting-edge-web-technologies.pdf",
+    "hash": "6b2be78454155f8e3a8e53672245a047c2261da6a8f3754534c658a3614cc8eb",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3813intro internet computing",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop3813intro_internet_computing.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop3813intro-internet-computing.pdf",
+    "hash": "9dc15404c7e6779ee0fbadf98963d11fc8de80127a68f52de7e284c951c60046",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cen4400intro computersystems perf eval",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cen4400intro_computersystems_perf_eval.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cen4400intro-computersystems-perf-eval.pdf",
+    "hash": "470d6d597f55f0c3a709279206bd84d294f16a39d742b1b36cd8f74d1dd0a7d2",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4420formal languages",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4420formal_languages.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4420formal-languages.pdf",
+    "hash": "a9b6130efa902a7dd91ebef1e8d9c34eca15d3ba0b8b9ea82841e1f6582bc21a",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4028game programming",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cap4028game_programming.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cap4028game-programming.pdf",
+    "hash": "d312b93cf0dc3bfb6423a85509930ead19a07711c3fd5c8f9f3a36de64019373",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4204cad based computer design",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cda4204cad_based_computer_design.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cda4204cad-based-computer-design.pdf",
+    "hash": "2a001844bfa536537ddddf6d60980737fab11c3645bce84b7e4764e5cc50b44d",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4210intro vlsi design",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cda4210intro_vlsi_design.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cda4210intro-vlsi-design.pdf",
+    "hash": "749d945361a0693830137e5cd7e8998a79dae30ac9b19b639b96d81a5ef02920",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3530data structures algorithm analysis",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop3530data_structures_algorithm_analysis.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop3530data-structures-algorithm-analysis.pdf",
+    "hash": "9857768ce51fe0e497b0a182e7a1a8e388f3118745229c548b7006a9ade136d3",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3014l foundationcs lab",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop3014l_foundationcs_lab.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop3014l-foundationcs-lab.pdf",
+    "hash": "b33f5c4dbac07f5ebfe14a7a948c8bf69b9ce02f18a51b26aa7ec0bcf1c884ec",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4331object oriented design",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4331object_oriented_design.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4331object-oriented-design.pdf",
+    "hash": "a413c625c2c6ca2b958136bc7b8b8e1435284faf87da3d89395b59904a7ee100",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930applied cryptography",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4930applied_cryptography.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4930applied-cryptography.pdf",
+    "hash": "d802a6832678cd4011b4821d0f6d8f93fb870f5d0423701bc3e17cf0c8808f99",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "egn4410c eng design1",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_egn4410c_eng_design1.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/egn4410c-eng-design1.pdf",
+    "hash": "f1b44257bba7b8a3370dfe761d582908dbf8d0d5b1d008591cf384c30f4220fc",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4400design analysis algorithms",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4400design_analysis_algorithms.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4400design-analysis-algorithms.pdf",
+    "hash": "94d95100d8ece85e34207f77b08435c015c7f2bc8f3243d463d8119ce4b5f85e",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930intro security cryptography",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4930intro_security_cryptography.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4930intro-security-cryptography.pdf",
+    "hash": "158f41d5b1daf9e03ee615bb27948e7cfdf49a75a652d7ba16d2b74877d83339",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4610computer op systems",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4610computer_op_systems.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4610computer-op-systems.pdf",
+    "hash": "8de7b269728c88e9e6032d916a8eaf0586fc334140fd51ded5adacd7f5a235d7",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cgs1570computer apps1",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cgs1570computer_apps1.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cgs1570computer-apps1.pdf",
+    "hash": "9de831acdb5ce374ae6b7bdeb1468caa479026f5cccb8658ee10dceb9253be1b",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cot4930cryptographic eng",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cot4930cryptographic_eng.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cot4930cryptographic-eng.pdf",
+    "hash": "97f5c9c3fc140c7e30e6a1761effb97d7bff5ba2d7653efa1aca3b96b9e564de",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "sta4821stochastic models cs",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_sta4821stochastic_models_cs.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/sta4821stochastic-models-cs.pdf",
+    "hash": "1f5a1620332cdf9a8940449c61c5f789dbe364948689ece7145ccdede9b2b8e9",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4770intro data mining machine intelligence",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cap4770intro_data_mining_machine_intelligence.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cap4770intro-data-mining-machine-intelligence.pdf",
+    "hash": "04f67356e327fc36a2ee7012efda28bd651b56e1fc7fb2ed61e2de877a98a42e",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4703applied database systems",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4703applied_database_systems.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4703applied-database-systems.pdf",
+    "hash": "dfa0c7c63a3f521f0aeb085ad5fc0e8020dc30390156647950f5614b6b064d83",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4020programming languages",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4020programming_languages.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4020programming-languages.pdf",
+    "hash": "ded9e6913539245a96712d468b08b5687604add06017fd735b63c541542c9d0c",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4367graphical app dev",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4367graphical_app_dev.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4367graphical-app-dev.pdf",
+    "hash": "8a5477b48456ec3dd12b476431dc2bd463df9795cf6875aca6c5c2351d8e3b38",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4045python programming",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4045python_programming.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4045python-programming.pdf",
+    "hash": "1124417b231fe1d1b38a0165fedf30dcca6cf70733cb91f08ab6d138a7c215e1",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cnt4104intro data comm",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cnt4104intro_data_comm.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cnt4104intro-data-comm.pdf",
+    "hash": "6882b0906ca1a82f3755404ce256a45c42eadc317b497c3fe88ee97f7c63be0e",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cen4010principles sw engineering",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cen4010principles_sw_engineering.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cen4010principles-sw-engineering.pdf",
+    "hash": "c911c5b8b75bcfd372cc38e523d3b7d89f460e21554dce67fa464abaeb75f529",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda3201c intro logic design",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cda3201c_intro_logic_design.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cda3201c-intro-logic-design.pdf",
+    "hash": "cd6e78a8c474b74a727ce42289e0249a195703bfba6a3a15d340f7bd5c3c31af",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3014foundations cs",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop3014foundations_cs.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop3014foundations-cs.pdf",
+    "hash": "0ebb1a662e701b4120e0976072c656ee869987e98b29a49f15bb8ee2cd5192db",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4593comp programming",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4593comp_programming.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4593comp-programming.pdf",
+    "hash": "6bfc9b3e13346131285c99957d2d00059844adad2618a3a116864facc8592a27",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop4814web services",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop4814web_services.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop4814web-services.pdf",
+    "hash": "0621cf482cf40c59d1e3c82cf13f80140db70af9395cc82e9f5a44c43dfd2f16",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4034computer animation",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cap4034computer_animation.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cap4034computer-animation.pdf",
+    "hash": "315c9f88cb09944a648eece94de101a607b4c36892d401bff6ec8e7d7f8d06f6",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda3331c intro microprocessor system",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cda3331c_intro_microprocessor_system.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cda3331c-intro-microprocessor-system.pdf",
+    "hash": "3492647c4bc86499c8795c58e9c14deea33437192cbc453f4bd10e02f65768ed",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4630artificial intelligence",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cap4630artificial_intelligence.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cap4630artificial-intelligence.pdf",
+    "hash": "d60addd6ddec2845e6882b6db1df1046e6faec73074a2c765912be6de6446fbf",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "egn4411c eng design2",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_egn4411c_eng_design2.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/egn4411c-eng-design2.pdf",
+    "hash": "c8db0f17702cfed545e0ebff49e493966b9d06f97feadea42fa0e322be80d22e",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cnt4403intro data network security",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cnt4403intro_data_network_security.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cnt4403intro-data-network-security.pdf",
+    "hash": "14c29ab90734eaff98a0a110a37f82147743dd48b9afa7409e49334d2801214a",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cen4214sw hw co design",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cen4214sw_hw_co_design.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cen4214sw-hw-co-design.pdf",
+    "hash": "7371ad5e4dd0536d451ba4574f024e6b8476be4e2b4fe921e14e757742b2de8d",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop2220intro programming c",
+    "degree_level": "UG",
+    "file_path": "data/raw_pdfs/Florida_Atlantic_University_cop2220intro_programming_c.pdf",
+    "source_url": "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/cop2220intro-programming-c.pdf",
+    "hash": "f2879df7de0b3ed5e72005e28fd9a12c2ef94528c644b7262565be9e219edc61",
+    "academic_year": "",
+    "country": "USA",
+    "state": "Florida",
+    "is_active": false,
+    "last_checked": "2026-03-08"
   }
 ]
