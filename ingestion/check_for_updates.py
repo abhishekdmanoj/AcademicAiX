@@ -47,6 +47,7 @@ def main():
         if not source_url:
             print(f"⚠ No source_url for {program}")
             continue
+
         if not source_url.endswith(".pdf"):
             print(f"⚠ {program} source_url is not a direct PDF, skipping.")
             continue
@@ -58,14 +59,11 @@ def main():
             new_hash = compute_sha256(TEMP_DOWNLOAD)
 
             if new_hash != entry["hash"]:
-                print("🚨 Update detected!")
-                entry["is_active"] = False
-                new_entry = entry.copy()
-                new_entry["hash"] = new_hash
-                new_entry["is_active"] = True
-                new_entry["academic_year"] = "UPDATED"
-                new_entry["last_checked"] = str(datetime.now().date())
-                registry.append(new_entry)
+                print("🚨 Update detected — updating entry in place.")
+                # FIX: update the existing entry directly, no append
+                entry["hash"] = new_hash
+                entry["academic_year"] = "UPDATED"
+                entry["last_checked"] = str(datetime.now().date())
                 updated = True
             else:
                 print("✅ No changes detected.")

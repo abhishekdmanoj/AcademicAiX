@@ -202,5 +202,15 @@
     "urls": [
       "https://www.fau.edu/engineering/eecs/undergraduate/syllabi-ce-cs/"
     ]
-  }
+  },
+  {
+  "college": "San Jose State University",
+  "country": "USA",
+  "state": "California",
+  "type": "page",
+  "skip_filename_filter": true,
+  "urls": [
+    "https://www.sjsu.edu/cs/students/syllabi/spring-2026.php"
+  ]
+}
 ]

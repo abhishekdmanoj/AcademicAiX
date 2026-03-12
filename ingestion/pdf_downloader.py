@@ -157,6 +157,11 @@ def process_source(source, registry):
     state = source.get("state", "")
     source_type = source.get("type", "page")
     urls = source.get("urls", [])
+    # If True, skip Ollama/regex and use filename as program name directly.
+    # Set this for course-level syllabus pages (e.g. SJSU) where every PDF is
+    # a separate course and Ollama returns generic/garbage names like "llm" or
+    # "Computer Science", causing multiple courses to collapse into one entry.
+    use_filename_as_program = source.get("skip_filename_filter", False)
 
     print(f"\n🏫 {college} ({country})")
 
@@ -189,7 +194,8 @@ def process_source(source, registry):
                 "source_url": url,
                 "college": college,
                 "country": country,
-                "state": state
+                "state": state,
+                "use_filename_as_program": use_filename_as_program
             })
             print(f"   ✅ Saved")
 
@@ -223,7 +229,8 @@ def process_source(source, registry):
                     "source_url": pdf_url,
                     "college": college,
                     "country": country,
-                    "state": state
+                    "state": state,
+                    "use_filename_as_program": use_filename_as_program
                 })
                 print(f"   ✅ Saved")
 
@@ -285,19 +292,32 @@ def bulk_download(sources_path=None):
         print(f"\n📄 {os.path.basename(pdf_path)}")
 
         try:
-            metadata = extract_metadata(pdf_path)
+            use_filename_as_program = item.get("use_filename_as_program", False)
 
-            program = metadata.get("program", "").strip()
-            if not program or program.lower() in [
-                "na", "n/a", "not provided",
-                "degree type and subject", ""
-            ]:
-                raw_name = os.path.splitext(
-                    os.path.basename(pdf_path)
-                )[0]
+            if use_filename_as_program:
+                # Skip regex + Ollama entirely — they produce generic/garbage names
+                # (e.g. "llm", "Computer Science") for course-level syllabus PDFs,
+                # causing multiple distinct courses to collapse into one registry entry.
+                raw_name = os.path.splitext(os.path.basename(pdf_path))[0]
                 program = raw_name.replace("_", " ").replace("-", " ").strip()
+                # URL-decode any percent-encoded characters in the filename
+                from urllib.parse import unquote
+                program = unquote(program).strip()
+                degree_level = "UG"
+            else:
+                metadata = extract_metadata(pdf_path)
 
-            degree_level = metadata.get("degree_level", "UG")
+                program = metadata.get("program", "").strip()
+                if not program or program.lower() in [
+                    "na", "n/a", "not provided",
+                    "degree type and subject", ""
+                ]:
+                    raw_name = os.path.splitext(
+                        os.path.basename(pdf_path)
+                    )[0]
+                    program = raw_name.replace("_", " ").replace("-", " ").strip()
+
+                degree_level = metadata.get("degree_level", "UG")
 
             print(f"   College : {college}")
             print(f"   Program : {program}")
