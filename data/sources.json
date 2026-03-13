@@ -212,5 +212,15 @@
   "urls": [
     "https://www.sjsu.edu/cs/students/syllabi/spring-2026.php"
   ]
+},
+{
+  "college": "Mahatma Gandhi University",
+  "country": "India",
+  "state": "Kerala",
+  "type": "crawl",
+  "domain": "https://www.mgu.ac.in",
+  "start_url": "https://www.mgu.ac.in/disclosure/syllabus-2/mgu-b-voc-honours-2025/",
+  "max_depth": 3,
+  "min_year": 2019
 }
 ]
