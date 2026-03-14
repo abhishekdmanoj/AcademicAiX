@@ -353,6 +353,11 @@ def register_program(
 
     if os.path.abspath(pdf_path) != os.path.abspath(dest_path):
         shutil.copy2(pdf_path, dest_path)
+        # Delete from uploads/ after copying to raw_pdfs/ — don't accumulate staging files
+        try:
+            os.remove(pdf_path)
+        except Exception:
+            pass
 
     relative_path = f"data/raw_pdfs/{clean_name}"
     file_hash = compute_sha256(dest_path)
