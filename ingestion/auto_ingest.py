@@ -242,6 +242,33 @@ def infer_entrance_exams(program_name):
     return []
 
 
+def get_admission_fallback(country, degree_level):
+    """
+    Returns a fallback admission note when no entrance exam rule matches.
+    Used for international universities and programs admitted on grades.
+    """
+    if country and country.strip().lower() == "india":
+        # Indian program with no matched exam — shouldn't normally happen
+        return [{
+            "name": "Check University Website",
+            "website": "",
+            "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+        }]
+    elif degree_level and degree_level.upper() == "PG":
+        return [{
+            "name": "No Entrance Exam",
+            "website": "",
+            "note": "Admission is typically based on undergraduate GPA, transcripts, and letters of recommendation. Check the university website for specific requirements."
+        }]
+    else:
+        # UG international
+        return [{
+            "name": "No Entrance Exam",
+            "website": "",
+            "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+        }]
+
+
 # ─────────────────────────────────────────
 # LAYER 2: OLLAMA FALLBACK
 # ─────────────────────────────────────────
@@ -362,6 +389,8 @@ def register_program(
     relative_path = f"data/raw_pdfs/{clean_name}"
     file_hash = compute_sha256(dest_path)
     entrance_exams = infer_entrance_exams(program)
+    if not entrance_exams:
+        entrance_exams = get_admission_fallback(country, degree_level)
 
     registry.append({
         "college": college,

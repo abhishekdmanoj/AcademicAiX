@@ -103,7 +103,13 @@
     "college": "University of Toronto",
     "program": "Computer Programming",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -124,7 +130,13 @@
     "college": "National University of Singapore",
     "program": "CS Curriculum",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -132,7 +144,13 @@
     "college": "University of Toronto",
     "program": "Software Tools and Systems",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -140,7 +158,13 @@
     "college": "McGill University",
     "program": "Computer Science",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -148,7 +172,13 @@
     "college": "Stanford University",
     "program": "CS106X: Programming Abstractions in C++",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -156,7 +186,13 @@
     "college": "Stanford University",
     "program": "Computer Science Department",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -164,7 +200,13 @@
     "college": "University of Oxford",
     "program": "Computer Science & Philosophy",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -172,7 +214,13 @@
     "college": "University of Oxford",
     "program": "Computer Science",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -180,7 +228,13 @@
     "college": "UNSW College",
     "program": "Computer Science",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -188,7 +242,13 @@
     "college": "University of Cape Town",
     "program": "BBusSc - Computer Science",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -196,7 +256,13 @@
     "college": "ACM IEEE Joint Task Force",
     "program": "CS2023",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-04"
   },
@@ -1119,7 +1185,13 @@
     "college": "Mahatma Gandhi University",
     "program": "5805 AC A 1 2024 MGU",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1127,7 +1199,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc . Honours Applied Accounting and Taxation",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1135,7 +1213,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Applied Accounting and Taxation",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1156,7 +1240,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Agro Food Processing",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1164,7 +1254,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Food Technology and Analysis",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1172,7 +1268,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Business Accounting and Taxation",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1180,7 +1282,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Business Accounting and Taxation 2",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1188,7 +1296,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc Honours Broadcasting and Journalism",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1196,7 +1310,13 @@
     "college": "Mahatma Gandhi University",
     "program": "BJ",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1256,7 +1376,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc .Honours Software Development and System Administration",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1264,7 +1390,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc . HonoursTourism Administration and Hospitality",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1272,7 +1404,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Tourism Administration and Hospitality",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1280,7 +1418,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc . Honours Advanced Course in Multi Sports and Fitness Training",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1301,7 +1445,13 @@
     "college": "Mahatma Gandhi University",
     "program": "1021 AC A 12 2026 MGU 1",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1309,7 +1459,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc . Honours Sound Engineering",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1317,7 +1473,13 @@
     "college": "Mahatma Gandhi University",
     "program": "B.Voc . Honours Fashion Technology and Merchandising",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1325,7 +1487,13 @@
     "college": "Mahatma Gandhi University",
     "program": "1075 AC A 12 2026 MGU",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1359,7 +1527,13 @@
     "college": "Mahatma Gandhi University",
     "program": "CHEMISTRY",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1367,7 +1541,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Environmental Science",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1375,7 +1555,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Textile and Fashion Designing",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1383,7 +1569,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Public Health",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1391,7 +1583,13 @@
     "college": "Mahatma Gandhi University",
     "program": "855 AC A 12 2026 MGU",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1399,7 +1597,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Audio Media Communication",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1407,7 +1611,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Fashion and Apparel Design",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1415,7 +1625,13 @@
     "college": "Mahatma Gandhi University",
     "program": "Multimedia Graphic Design",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1436,7 +1652,13 @@
     "college": "Mahatma Gandhi University",
     "program": "MG2AECFRH150 French",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1457,7 +1679,13 @@
     "college": "Mahatma Gandhi University",
     "program": "MG2AECHIN150 Hindi",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "Check University Website",
+        "website": "",
+        "note": "Admission requirements not automatically detected. Please check the university website for entrance exam details."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-13"
   },
@@ -1478,7 +1706,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Data Structures CS 46B 01 Spring 2026 Tsao",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1486,7 +1720,13 @@
     "college": "San Jose State University",
     "program": "CS22B 05 S26 Huynh Westfall",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1494,7 +1734,13 @@
     "college": "San Jose State University",
     "program": "Taylor S2 S3 Data Structures and Algorithms CS 146 Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1515,7 +1761,13 @@
     "college": "San Jose State University",
     "program": "CS159 01 Chun Spring 2026 Syllabus",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1523,7 +1775,13 @@
     "college": "San Jose State University",
     "program": "S26 CS249 01 Distributed Computing SriramRao",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1544,7 +1802,13 @@
     "college": "San Jose State University",
     "program": "Mobile Device Development CS 175 Spring 2026 Chen",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1552,7 +1816,13 @@
     "college": "San Jose State University",
     "program": "Technical Writing Workshop CS 100W 08 Spring 2026 Petty",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1560,7 +1830,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Data Visualization CS 133 Spring 2026 Segan",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1568,7 +1844,13 @@
     "college": "San Jose State University",
     "program": "DominicA Software Engineering CS 160 01 Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1576,7 +1858,13 @@
     "college": "San Jose State University",
     "program": "Advanced Programming Language Principles CS 252 Spring 2026 Austin",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1584,7 +1872,13 @@
     "college": "San Jose State University",
     "program": "Programming Paradigms CS 152 Spring 2026 Section2 Sengupta",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1592,7 +1886,13 @@
     "college": "San Jose State University",
     "program": "Telvin Zhong Object Oriented Design CS 151 Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1600,7 +1900,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Computer Systems CS 47 Spring 2026 Paravastu",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1608,7 +1914,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Artificial Intelligence CS 156 Spring 2026 sec4 Khayrallah",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1616,7 +1928,13 @@
     "college": "San Jose State University",
     "program": "CS267 02 Butt",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1624,7 +1942,13 @@
     "college": "San Jose State University",
     "program": "Preparation for Writing Project or Thesis CS 297 Spring 2026 Chheang",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1632,7 +1956,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Artificial Intelligence CS 156 Spring 2026 07 Hakim",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1640,7 +1970,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Programming CS 46A 02 03 Spring 2026 Tsao",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1648,7 +1984,13 @@
     "college": "San Jose State University",
     "program": "SJSU CS46A Syllabus SaeedehKomijani",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1656,7 +1998,13 @@
     "college": "San Jose State University",
     "program": "CS158 02 SP26 Mortezaie",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1664,7 +2012,13 @@
     "college": "San Jose State University",
     "program": "Technical Writing Workshop CS 100W 04 Spring 2026 Jones",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1672,7 +2026,13 @@
     "college": "San Jose State University",
     "program": "CS158B 01 Rajagopal",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1680,7 +2040,13 @@
     "college": "San Jose State University",
     "program": "CS133 01 S26 Huynh Westfall",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1688,7 +2054,13 @@
     "college": "San Jose State University",
     "program": "CS 200W   Section 2 Syllabus   Tomlinson",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1696,7 +2068,13 @@
     "college": "San Jose State University",
     "program": "CS259 01 Chun Spring 2026 Syllabus",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1704,7 +2082,13 @@
     "college": "San Jose State University",
     "program": "CS 100W   Section 7 Syllabus   Tomlinson",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1712,7 +2096,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Artificial Intelligence CS 156 Spring 2026 sec3 Khayrallah",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1720,7 +2110,13 @@
     "college": "San Jose State University",
     "program": "Python for Everyone CS 22A Spring 2026 Chen",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1728,7 +2124,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Computer Systems CS 47 Spring 2026 section03 Paravastu",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1749,7 +2151,13 @@
     "college": "San Jose State University",
     "program": "CS123B Syllabus Spring2026 Wesley v1",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1757,7 +2165,13 @@
     "college": "San Jose State University",
     "program": "Processing Big Data Tools and Techniques CS 131 Spring 2026 Gligorijevic",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1765,7 +2179,13 @@
     "college": "San Jose State University",
     "program": "CS149 02 SP26 Mortezaie",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1773,7 +2193,13 @@
     "college": "San Jose State University",
     "program": "CS174 Section2 S26 Moazeni",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1781,7 +2207,13 @@
     "college": "San Jose State University",
     "program": "CS151 Section05 Robert Nicholson Syllabus",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1789,7 +2221,13 @@
     "college": "San Jose State University",
     "program": "CS 262 02 S26 Roy",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1797,7 +2235,13 @@
     "college": "San Jose State University",
     "program": "CS157A 01 02 Spring2026 Wu",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1805,7 +2249,13 @@
     "college": "San Jose State University",
     "program": "CS160 04 S26 Butt",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1813,7 +2263,13 @@
     "college": "San Jose State University",
     "program": "Data Structures and Algorithms CS 146 Spring 2026 Section 06 Ben Poon",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1821,7 +2277,13 @@
     "college": "San Jose State University",
     "program": "Technical Writing Workshop CS 100W 11 Spring 2026 Petty",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1829,7 +2291,13 @@
     "college": "San Jose State University",
     "program": "cs46BSpring Luo",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1837,7 +2305,13 @@
     "college": "San Jose State University",
     "program": "art cs 108 s1 s80 morgan",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1845,7 +2319,13 @@
     "college": "San Jose State University",
     "program": "CS 156 01 S26 Akther",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1853,7 +2333,13 @@
     "college": "San Jose State University",
     "program": "CS218 Section1 SP26 Moazeni",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1861,7 +2347,13 @@
     "college": "San Jose State University",
     "program": "CS BIOL 123A Syllabus Wesley Spring 2026 Sec03 Sec04 v1",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1869,7 +2361,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Computer Vision CS 136 Spring 2026 Attar",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1877,7 +2375,13 @@
     "college": "San Jose State University",
     "program": "CS147 Spring 2026 01 Syllabus Patra",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1898,7 +2402,13 @@
     "college": "San Jose State University",
     "program": "CS224 02 S26 Wesley",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1906,7 +2416,13 @@
     "college": "San Jose State University",
     "program": "CS166 02 S26 Tarng",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1914,7 +2430,13 @@
     "college": "San Jose State University",
     "program": "Technical Writing Workshop CS 100W Spring 2026 Choe",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1922,7 +2444,13 @@
     "college": "San Jose State University",
     "program": "DominicA Software Engineering CS 160 02 Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1930,7 +2458,13 @@
     "college": "San Jose State University",
     "program": "Programming Paradigms CS 152 Spring 2026 Section1 Sengupta",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1938,7 +2472,13 @@
     "college": "San Jose State University",
     "program": "Data Science Senior Project CS 163 Spring 2026 Ishigaki",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1959,7 +2499,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Artificial Intelligence CS 156 Spring 2026 sec6 Khayrallah",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1967,7 +2513,13 @@
     "college": "San Jose State University",
     "program": "CS22A Sp2026 Lee Python for Everyone",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1975,7 +2527,13 @@
     "college": "San Jose State University",
     "program": "Graduate Technical Writing CS 200W Spring 2026 Choe",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1983,7 +2541,13 @@
     "college": "San Jose State University",
     "program": "cs122Spring Luo",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -1991,7 +2555,13 @@
     "college": "San Jose State University",
     "program": "S26 CS147 04 Computer Architecture SriramRao",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2025,7 +2595,13 @@
     "college": "San Jose State University",
     "program": "CS190 Syllabus Spr26 Chun",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2033,7 +2609,13 @@
     "college": "San Jose State University",
     "program": "Technical Writing Workshop CS 100W 05 Spring 2026 Jones",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2054,7 +2636,13 @@
     "college": "San Jose State University",
     "program": "Blockchain and Cryptocurrencies CS 168 Spring 2026 Austin",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2062,7 +2650,13 @@
     "college": "San Jose State University",
     "program": "Introduction to the Design and Analysis of Algorithms CS 155 Spring 2026 Taylor",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2070,7 +2664,13 @@
     "college": "San Jose State University",
     "program": "DominicA Software Project CS 161 02 Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2078,7 +2678,13 @@
     "college": "San Jose State University",
     "program": "CS174 Section1 S26 Moazeni",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2086,7 +2692,13 @@
     "college": "San Jose State University",
     "program": "cs157Bspring Luo",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2094,7 +2706,13 @@
     "college": "San Jose State University",
     "program": "Applied Algorithms CS 48 Spring 2026 Taylor",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2102,7 +2720,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Programming CS 46A Spring 2026 Tshukudu",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2110,7 +2734,13 @@
     "college": "San Jose State University",
     "program": "CS266 01 2026Spring MMoh v1",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2118,7 +2748,13 @@
     "college": "San Jose State University",
     "program": "Data Structures and Algorithms Section 04 CS 146 Spring 2026 Case",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2126,7 +2762,13 @@
     "college": "San Jose State University",
     "program": "Advanced Programming with Python CS 122 Spring 2026 Segan",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2134,7 +2776,13 @@
     "college": "San Jose State University",
     "program": "DominicA Programming in Java CS 49J 01 Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2142,7 +2790,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Programming Workshop CS 46AW Spring 2026 Taylor",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2150,7 +2804,13 @@
     "college": "San Jose State University",
     "program": "CS255 01 S26 Potika",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2158,7 +2818,13 @@
     "college": "San Jose State University",
     "program": "CS 200W   Section 3 Syllabus   Tomlinson",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2166,7 +2832,13 @@
     "college": "San Jose State University",
     "program": "CS 286 01 S26 Akther",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2174,7 +2846,13 @@
     "college": "San Jose State University",
     "program": "SJSU CS46B Syllabus SaeedehKomijani",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2182,7 +2860,13 @@
     "college": "San Jose State University",
     "program": "Cheilek CS 100W Spring 2026",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2190,7 +2874,13 @@
     "college": "San Jose State University",
     "program": "CS149 03 SP26 Mortezaie",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2198,7 +2888,13 @@
     "college": "San Jose State University",
     "program": "CS190i Syllabus Spr26 Chun",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2206,7 +2902,13 @@
     "college": "San Jose State University",
     "program": "User Interface Design CS 235 Spring 2026 Chheang",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2214,7 +2916,13 @@
     "college": "San Jose State University",
     "program": "CS47Sec01Spring2026 Patra",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2222,7 +2930,13 @@
     "college": "San Jose State University",
     "program": "CS257 Section1 SP26 Moazeni",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2230,7 +2944,13 @@
     "college": "San Jose State University",
     "program": "CS274 02 Syllabus Spring 2026 TMoh",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2238,7 +2958,13 @@
     "college": "San Jose State University",
     "program": "Introduction to Artificial Intelligence CS 156 Spring 2026 08 Hakim",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2259,7 +2985,13 @@
     "college": "San Jose State University",
     "program": "Topics in Natural Language Processing CS 273 Spring 2026 Abri",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
   },
@@ -2267,8 +2999,27 @@
     "college": "San Jose State University",
     "program": "Operating Systems CS 149 Spring 2026 Andreopoulos",
     "official_website": "",
-    "entrance_exams": [],
+    "entrance_exams": [
+      {
+        "name": "No Entrance Exam",
+        "website": "",
+        "note": "Admission is typically based on high school grades or predicted grades. Check the university website for specific entry requirements."
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-14"
+  },
+  {
+    "college": "A P J ABDUL KALAM TECHNOLOGICAL UNIVERSITY",
+    "program": "Master of Architecture (Environmental Design)",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-15"
   }
 ]

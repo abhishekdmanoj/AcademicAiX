@@ -12,6 +12,7 @@ router = APIRouter(prefix="/chat", tags=["Chat"])
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 METADATA_PATH = os.path.join(PROJECT_ROOT, "data", "university_metadata.json")
+REGISTRY_PATH = os.path.join(PROJECT_ROOT, "data", "registry.json")
 CHAT_INDEX_PATH = os.path.join(PROJECT_ROOT, "vector_store", "faiss_chat.index")
 CHAT_METADATA_PATH = os.path.join(PROJECT_ROOT, "vector_store", "metadata_chat.pkl")
 
@@ -166,6 +167,7 @@ def extractive_answer(chunks: list) -> str:
 
 def get_entrance_info(college: str, program: str) -> str:
     try:
+        # Look up entrance exams from university_metadata.json
         metadata = load_json(METADATA_PATH)
         for entry in metadata:
             if (entry.get("college", "").lower() == college.lower() and
@@ -176,10 +178,37 @@ def get_entrance_info(college: str, program: str) -> str:
                     for exam in exams:
                         line = f"• {exam['name']}"
                         if exam.get("website"):
-                            line += f" - {exam['website']}"
+                            line += f" — {exam['website']}"
                         lines.append(line)
                     return "\n".join(lines)
-        return None
+                # Entry found but no exams — fall through to degree-level fallback
+                break
+
+        # No entrance exam data — use degree level from registry as fallback
+        registry = load_json(REGISTRY_PATH)
+        degree_level = "UG"  # default
+        for entry in registry:
+            if (entry.get("college", "").lower() == college.lower() and
+                    entry.get("program", "").lower() == program.lower() and
+                    entry.get("is_active", False)):
+                degree_level = entry.get("degree_level", "UG")
+                break
+
+        if degree_level == "PG":
+            return (
+                f"**Admission to {program} at {college}**\n\n"
+                "• Admission is typically based on your undergraduate degree marks or CGPA.\n"
+                "• Some programs may require an entrance test conducted by the university.\n"
+                "• Check the official university website for exact eligibility criteria and cutoffs."
+            )
+        else:
+            return (
+                f"**Admission to {program} at {college}**\n\n"
+                "• Admission is typically based on 12th grade (Higher Secondary) marks.\n"
+                "• Some programs may have a merit list or university-level entrance test.\n"
+                "• Check the official university website for exact eligibility criteria and cutoffs."
+            )
+
     except Exception as e:
         print(f"Metadata lookup error: {e}")
         return None
