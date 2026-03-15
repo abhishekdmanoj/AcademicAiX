@@ -69,7 +69,8 @@ def get_relevant_chunks(query: str, college: str = "", program: str = "", top_k:
         query_vec = model.encode([query], convert_to_numpy=True)
         query_vec = query_vec / np.linalg.norm(query_vec, axis=1, keepdims=True)
 
-        search_k = 300 if (college or program) else top_k * 2
+        # When filtering by college+program, search ALL chunks to avoid missing any
+        search_k = len(_chat_meta) if (college and program) else top_k * 2
         distances, indices = _chat_index.search(query_vec.astype("float32"), min(search_k, len(_chat_meta)))
 
         results = []
@@ -273,10 +274,6 @@ async def chat(req: ChatRequest):
             })
 
     chunks = get_relevant_chunks(message, college, program, top_k=5)
-
-    if not chunks and (college or program):
-        print(f"No filtered chunks found for {college} - {program}, broadening search")
-        chunks = get_relevant_chunks(message, top_k=5)
 
     if not chunks:
         return JSONResponse({

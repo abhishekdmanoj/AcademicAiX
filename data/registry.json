@@ -2052,5 +2052,31 @@
     "state": "Kerala",
     "is_active": true,
     "last_checked": "2026-03-15"
+  },
+  {
+    "college": "A P J ABDUL KALAM TECHNOLOGICAL UNIVERSITY",
+    "program": "Master of Planning (Urban Planning)",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/A_P_J_ABDUL_KALAM_TECHNOLOGICAL_UNIVERSITY_Master_of_Planning__Urban_Planning.pdf",
+    "source_url": "https://ktu.edu.in/academics/syllabus",
+    "hash": "26d0ea697b3922f931759c8d577d6d5677fcbd8f3d4c27a283ea3318d51d7742",
+    "academic_year": "",
+    "country": "India",
+    "state": "Kerala",
+    "is_active": true,
+    "last_checked": "2026-03-15"
+  },
+  {
+    "college": "A P J ABDUL KALAM TECHNOLOGICAL UNIVERSITY",
+    "program": "MASTER OF ARCHITECTURE(ENVIRONMENTAL DESIGN))",
+    "degree_level": "PG",
+    "file_path": "data/raw_pdfs/A_P_J_ABDUL_KALAM_TECHNOLOGICAL_UNIVERSITY_MASTER_OF_ARCHITECTURE_ENVIRONMENTAL_DESIGN.pdf",
+    "source_url": "https://ktu.edu.in/academics/syllabus",
+    "hash": "cf8d42f857070fc904e7ac0ccf1bc4d388a690ba43bc7d06ed972c2531790ed6",
+    "academic_year": "",
+    "country": "India",
+    "state": "Kerala",
+    "is_active": true,
+    "last_checked": "2026-03-15"
   }
 ]

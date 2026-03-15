@@ -248,7 +248,6 @@ def get_admission_fallback(country, degree_level):
     Used for international universities and programs admitted on grades.
     """
     if country and country.strip().lower() == "india":
-        # Indian program with no matched exam — shouldn't normally happen
         return [{
             "name": "Check University Website",
             "website": "",
@@ -261,7 +260,6 @@ def get_admission_fallback(country, degree_level):
             "note": "Admission is typically based on undergraduate GPA, transcripts, and letters of recommendation. Check the university website for specific requirements."
         }]
     else:
-        # UG international
         return [{
             "name": "No Entrance Exam",
             "website": "",
@@ -352,13 +350,14 @@ def register_program(
     degree_level,
     country="India",
     state="",
-    source_url=""
+    source_url="",
+    update_index=True
 ):
     """
     Registers program into both JSON files.
     Version-aware: deactivates old entry if exists.
-    Does NOT embed. Does NOT rebuild FAISS.
-    Caller triggers rebuild.
+    update_index=True  → incremental add for new, full rebuild for update
+    update_index=False → skip index update (used by bulk scrape which rebuilds once at end)
     """
     registry = load_json(REGISTRY_PATH)
     university_metadata = load_json(METADATA_PATH)
@@ -380,7 +379,7 @@ def register_program(
 
     if os.path.abspath(pdf_path) != os.path.abspath(dest_path):
         shutil.copy2(pdf_path, dest_path)
-        # Delete from uploads/ after copying to raw_pdfs/ — don't accumulate staging files
+        # Delete from uploads/ after copying to raw_pdfs/
         try:
             os.remove(pdf_path)
         except Exception:
@@ -429,6 +428,25 @@ def register_program(
     save_json(METADATA_PATH, university_metadata)
 
     action = "Updated" if status == "update" else "Registered"
+
+    # ── Index update ──────────────────────────────────────────────────
+    if update_index:
+        if status == "new":
+            # Incremental add — only embed the new PDF (fast, 2-5 seconds)
+            try:
+                from offline_pipeline.append_to_index import append_to_index
+                append_to_index(dest_path, college, program, relative_path)
+            except Exception as e:
+                print(f"   ⚠ Incremental index update failed: {e}")
+                print(f"   ℹ Run build_syllabus_index manually to sync")
+        else:
+            # Updated program — full rebuild needed to remove old vectors
+            try:
+                from offline_pipeline.build_syllabus_index import build_syllabus_index
+                build_syllabus_index()
+            except Exception as e:
+                print(f"   ⚠ Full index rebuild failed: {e}")
+
     return {
         "success": True,
         "message": f"{action}: {college} - {program}"

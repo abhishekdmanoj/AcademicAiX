@@ -80,12 +80,6 @@ async def confirm_ingest(
     if not result["success"]:
         return JSONResponse({"success": False, "message": result["message"]})
 
-    try:
-        from offline_pipeline.build_syllabus_index import build_syllabus_index
-        build_syllabus_index()
-    except Exception as e:
-        return JSONResponse({"success": False, "message": f"Registered but rebuild failed: {str(e)}"})
-
     if os.path.exists(tmp_path):
         os.unlink(tmp_path)
 
@@ -130,7 +124,8 @@ async def ingest_folder(
                 program=metadata["program"],
                 degree_level=metadata["degree_level"],
                 country=country,
-                state=state
+                state=state,
+                update_index=False
             )
 
             results.append({
@@ -378,14 +373,7 @@ class SourceEntry(BaseModel):
     country: Optional[str] = "India"
     state: Optional[str] = ""
     type: Optional[str] = "direct_pdf"
-    # direct_pdf / page fields
-    urls: Optional[List[str]] = []
-    skip_filename_filter: Optional[bool] = False
-    # crawl fields
-    domain: Optional[str] = ""
-    start_url: Optional[str] = ""
-    max_depth: Optional[int] = 3
-    min_year: Optional[int] = 2018
+    urls: List[str] = []
 
 class SourceUpdate(BaseModel):
     original_college: Optional[str] = None
@@ -394,44 +382,35 @@ class SourceUpdate(BaseModel):
 @router.post("/sources")
 async def upsert_source(req: SourceUpdate):
     sources = load_json(SOURCES_PATH)
-    s = req.source
-    is_crawl = s.type == "crawl"
-
-    # Build the entry — only include relevant fields per type
-    def build_entry(s: SourceEntry):
-        entry = {
-            "college": s.college,
-            "country": s.country,
-            "state": s.state,
-            "type": s.type,
-        }
-        if is_crawl:
-            entry["domain"] = s.domain
-            entry["start_url"] = s.start_url
-            entry["max_depth"] = s.max_depth or 3
-            entry["min_year"] = s.min_year or 2018
-        else:
-            entry["urls"] = s.urls or []
-            if s.type == "page":
-                entry["skip_filename_filter"] = s.skip_filename_filter or False
-        return entry
 
     if req.original_college:
+        # Update existing
         found = False
-        for i, entry in enumerate(sources):
+        for entry in sources:
             if entry.get("college", "").lower() == req.original_college.lower():
-                sources[i] = build_entry(s)
+                entry["college"] = req.source.college
+                entry["country"] = req.source.country
+                entry["state"] = req.source.state
+                entry["type"] = req.source.type
+                entry["urls"] = req.source.urls
                 found = True
                 break
         if not found:
             raise HTTPException(status_code=404, detail="Source not found")
-        msg = f"Source updated for {s.college}"
+        msg = f"Source updated for {req.source.college}"
     else:
+        # Add new
         for entry in sources:
-            if entry.get("college", "").lower() == s.college.lower():
-                raise HTTPException(status_code=400, detail=f"{s.college} already exists in sources")
-        sources.append(build_entry(s))
-        msg = f"Source added for {s.college}"
+            if entry.get("college", "").lower() == req.source.college.lower():
+                raise HTTPException(status_code=400, detail=f"{req.source.college} already exists in sources")
+        sources.append({
+            "college": req.source.college,
+            "country": req.source.country,
+            "state": req.source.state,
+            "type": req.source.type,
+            "urls": req.source.urls
+        })
+        msg = f"Source added for {req.source.college}"
 
     with open(SOURCES_PATH, "w") as f:
         json.dump(sources, f, indent=2)
@@ -456,98 +435,3 @@ async def delete_source(college: str):
         json.dump(sources, f, indent=2)
 
     return JSONResponse({"success": True, "message": f"Source removed: {college}"})
-
-
-# ----------------------------
-# GET /admin/suggest-domain
-# ----------------------------
-
-@router.get("/suggest-domain")
-async def suggest_domain(college: str):
-    """
-    Given a university name, use Google Custom Search to suggest:
-    - The university's domain
-    - The best start URL for syllabus crawling
-    Returns top suggestions for admin to confirm.
-    """
-    import requests as req_lib
-
-    api_key = os.environ.get("GOOGLE_API_KEY", "")
-    cse_id  = os.environ.get("GOOGLE_CSE_ID", "")
-
-    if not api_key or not cse_id:
-        raise HTTPException(
-            status_code=503,
-            detail="GOOGLE_API_KEY or GOOGLE_CSE_ID not set in environment"
-        )
-
-    results = []
-
-    # Query 1 — find the university's official domain
-    try:
-        domain_res = req_lib.get(
-            "https://www.googleapis.com/customsearch/v1",
-            params={
-                "key": api_key,
-                "cx": cse_id,
-                "q": f"{college} official university website",
-                "num": 3,
-            },
-            timeout=10
-        )
-        domain_data = domain_res.json()
-        domain_items = domain_data.get("items", [])
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Google Search failed: {e}")
-
-    # Extract unique domains from results
-    from urllib.parse import urlparse
-    seen_domains = set()
-    domain_suggestions = []
-    for item in domain_items:
-        url = item.get("link", "")
-        parsed = urlparse(url)
-        domain = f"{parsed.scheme}://{parsed.netloc}"
-        if domain not in seen_domains and parsed.netloc:
-            seen_domains.add(domain)
-            domain_suggestions.append({
-                "domain": domain,
-                "title": item.get("title", ""),
-                "snippet": item.get("snippet", "")
-            })
-
-    # Query 2 — find the syllabus start page using top domain
-    start_url_suggestions = []
-    if domain_suggestions:
-        top_domain = domain_suggestions[0]["domain"]
-        top_netloc = urlparse(top_domain).netloc
-        try:
-            syllabus_res = req_lib.get(
-                "https://www.googleapis.com/customsearch/v1",
-                params={
-                    "key": api_key,
-                    "cx": cse_id,
-                    "q": f"{college} syllabus curriculum site:{top_netloc}",
-                    "num": 5,
-                },
-                timeout=10
-            )
-            syllabus_data = syllabus_res.json()
-            for item in syllabus_data.get("items", []):
-                link = item.get("link", "")
-                # Prefer pages over direct PDFs as start URLs
-                if not link.lower().endswith(".pdf"):
-                    start_url_suggestions.append({
-                        "url": link,
-                        "title": item.get("title", ""),
-                        "snippet": item.get("snippet", "")
-                    })
-        except Exception:
-            pass  # Syllabus search is best-effort
-
-    return JSONResponse({
-        "success": True,
-        "college": college,
-        "domain_suggestions": domain_suggestions[:3],
-        "start_url_suggestions": start_url_suggestions[:3],
-    })
