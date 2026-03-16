@@ -2270,5 +2270,18 @@
     "entrance_exams": [],
     "pyq_links": [],
     "last_updated": "2026-03-14"
+  },
+  {
+    "college": "A P J ABDUL KALAM TECHNOLOGICAL UNIVERSITY",
+    "program": "Master of Planning (Urban Planning)",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-16"
   }
 ]

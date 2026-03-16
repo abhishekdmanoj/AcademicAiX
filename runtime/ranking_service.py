@@ -133,6 +133,10 @@ def rank_universities(
     for entry in registry:
         if not entry.get("is_active", False):
             continue
+
+    # Hide scraped course datasets from ranking
+        if entry.get("dataset_type") == "course_scrape":
+            continue
         if country and normalize(entry.get("country")) != normalize(country):
             continue
         if state and normalize(entry.get("state")) != normalize(state):
@@ -146,6 +150,17 @@ def rank_universities(
             continue
         item = metadata[idx]
         key = (normalize(item["college"]), normalize(item["program"]))
+
+        # Skip scraped course datasets
+        registry_entry = next(
+            (r for r in registry
+             if normalize(r.get("college")) == key[0]
+             and normalize(r.get("program")) == key[1]),
+             None
+        )
+
+        if registry_entry and registry_entry.get("dataset_type") == "course_scrape":
+            continue
 
         if country or state:
             if key not in allowed_programs:
