@@ -375,42 +375,64 @@ class SourceEntry(BaseModel):
     type: Optional[str] = "direct_pdf"
     urls: List[str] = []
 
+    # crawler fields
+    domain: Optional[str] = ""
+    start_url: Optional[str] = ""
+    max_depth: Optional[int] = 3
+    min_year: Optional[int] = 2018
+
+
 class SourceUpdate(BaseModel):
     original_college: Optional[str] = None
     source: SourceEntry
 
+
 @router.post("/sources")
 async def upsert_source(req: SourceUpdate):
     sources = load_json(SOURCES_PATH)
+    s = req.source
+
+    def build_entry():
+        entry = {
+            "college": s.college,
+            "country": s.country,
+            "state": s.state,
+            "type": s.type,
+        }
+
+        # crawler sources
+        if s.type == "crawl":
+            entry["domain"] = s.domain
+            entry["start_url"] = s.start_url
+            entry["max_depth"] = s.max_depth
+            entry["min_year"] = s.min_year
+
+        # page or direct_pdf
+        else:
+            entry["urls"] = s.urls
+
+        return entry
 
     if req.original_college:
-        # Update existing
         found = False
-        for entry in sources:
+        for i, entry in enumerate(sources):
             if entry.get("college", "").lower() == req.original_college.lower():
-                entry["college"] = req.source.college
-                entry["country"] = req.source.country
-                entry["state"] = req.source.state
-                entry["type"] = req.source.type
-                entry["urls"] = req.source.urls
+                sources[i] = build_entry()
                 found = True
                 break
+
         if not found:
             raise HTTPException(status_code=404, detail="Source not found")
-        msg = f"Source updated for {req.source.college}"
+
+        msg = f"Source updated for {s.college}"
+
     else:
-        # Add new
         for entry in sources:
-            if entry.get("college", "").lower() == req.source.college.lower():
-                raise HTTPException(status_code=400, detail=f"{req.source.college} already exists in sources")
-        sources.append({
-            "college": req.source.college,
-            "country": req.source.country,
-            "state": req.source.state,
-            "type": req.source.type,
-            "urls": req.source.urls
-        })
-        msg = f"Source added for {req.source.college}"
+            if entry.get("college", "").lower() == s.college.lower():
+                raise HTTPException(status_code=400, detail=f"{s.college} already exists in sources")
+
+        sources.append(build_entry())
+        msg = f"Source added for {s.college}"
 
     with open(SOURCES_PATH, "w") as f:
         json.dump(sources, f, indent=2)
