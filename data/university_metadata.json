@@ -239,6 +239,14 @@
   },
   {
     "college": "Florida Atlantic University",
+    "program": "cap4401digital img processing",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
     "program": "map4260intro queueing theory",
     "official_website": "",
     "entrance_exams": [
@@ -273,7 +281,28 @@
   },
   {
     "college": "Florida Atlantic University",
+    "program": "McA",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "NIMCET",
+        "website": "https://nimcet.admissions.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
     "program": "cop4854cutting edge web technologies",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cop3813intro internet computing",
     "official_website": "",
     "entrance_exams": [],
     "pyq_links": [],
@@ -305,6 +334,19 @@
     "program": "cap4028game programming",
     "official_website": "",
     "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cda4204cad based computer design",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
     "pyq_links": [],
     "last_updated": "2026-03-08"
   },
@@ -419,6 +461,19 @@
   },
   {
     "college": "Florida Atlantic University",
+    "program": "cop4703applied database systems",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
     "program": "cop4020programming languages",
     "official_website": "",
     "entrance_exams": [],
@@ -475,6 +530,14 @@
   },
   {
     "college": "Florida Atlantic University",
+    "program": "cop4593comp programming",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
     "program": "cop4814web services",
     "official_website": "",
     "entrance_exams": [],
@@ -497,6 +560,14 @@
   {
     "college": "Florida Atlantic University",
     "program": "cda3331c intro microprocessor system",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-08"
+  },
+  {
+    "college": "Florida Atlantic University",
+    "program": "cap4630artificial intelligence",
     "official_website": "",
     "entrance_exams": [],
     "pyq_links": [],
@@ -924,6 +995,429 @@
     "entrance_exams": [],
     "pyq_links": [],
     "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Syllabus for SP26  CS 157C Sec 80   NoSQL Kim",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "S26 CS100W 02 Syllabus RobAshcom",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Syllabus for SP26  CS 151 Sec 01   Object Oriented Dsgn Kim",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Syllabus CS 146 01 Spring 2026 Navrati Saxena",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Tahereh Introduction to Database Management Systems CS 157A Spring 2026 Arabghalizi",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Tahereh Introduction to Machine Learning CS 171 Spring 2026 Arabghalizi",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Syllabus 258 01 Spring 2026 Navrati Saxena",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Syllabus for SP26  CS 157C Sec 81   NoSQL Kim",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Computer Architecture CS 147 02 03 Spring 2026 Tsao",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Syllabus CS 122 03 S26 Jennifer Chun",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "San Jose State University",
+    "program": "Computer Game Design and Programming CS 134 Spring 2026 Chheang",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-12"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "1 IDP of MGU  Final 1 Institutional Development Plan Nov 24",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "MGU UGC approval pdf",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "5805 AC A 1 2024 MGU",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Applied Accounting and Taxation",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Applied Accounting and Taxation",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Banking and Financial Services",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Agro Food Processing",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Food Technology and Analysis",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Business Accounting and Taxation",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Business Accounting and Taxation 2",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc Honours Broadcasting and Journalism",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "BJ",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Animation and Graphic Design",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Logistics Management",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Industrial Instrumentation and Automation",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Fashion Design and Management",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc .Honours Software Development and System Administration",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . HonoursTourism Administration and Hospitality",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Tourism Administration and Hospitality",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Advanced Course in Multi Sports and Fitness Training",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Tourism and Hospitality Managment",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "1021 AC A 12 2026 MGU 1",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Sound Engineering",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "B.Voc . Honours Fashion Technology and Merchandising",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "1075 AC A 12 2026 MGU",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Business Law and Management",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-PG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Banking Finance",
+    "official_website": "",
+    "entrance_exams": [
+      {
+        "name": "CUET-UG",
+        "website": "https://cuet.nta.nic.in"
+      }
+    ],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "CHEMISTRY",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Environmental Science",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Textile and Fashion Designing",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Public Health",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "855 AC A 12 2026 MGU",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Audio Media Communication",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Fashion and Apparel Design",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
+  },
+  {
+    "college": "Mahatma Gandhi University",
+    "program": "Multimedia Graphic Design",
+    "official_website": "",
+    "entrance_exams": [],
+    "pyq_links": [],
+    "last_updated": "2026-03-13"
   },
   {
     "college": "Mahatma Gandhi University",
@@ -1776,791 +2270,5 @@
     "entrance_exams": [],
     "pyq_links": [],
     "last_updated": "2026-03-14"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "cda4204cad based computer design",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-UG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Computer Applications 1",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Foundations of Computer Science",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "COP 4020 Programming Languages",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "cap4630artificial intelligence",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Python Programming",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "An Introduction to Formal Languages and Automata Theory",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "COP 4854 Cutting-Edge Web Technologies",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "CAP 4770",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Senior Seminar",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "cap4401digital img processing",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Data Communications",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Object Oriented Design and Programming",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Engineering Design II",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Data Structures and Algorithm Analysis",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Computer Applications",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Engineering Design I",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Data and Network Security",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Database Structures",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-UG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "cop3813intro internet computing",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "4930 Randomized Algorithms",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Applied Cryptography",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Security and Cryptography",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Programming in C",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Logic Design",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Microprocessor System",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Computer Animation",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Foundation of Computer Science",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "cop4593comp programming",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "McA",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "NIMCET",
-        "website": "https://nimcet.admissions.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Stochastic Models for Computer Science",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Web Services",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to VLSI Design",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "cop4703applied database systems",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-UG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Principles of Software Engineering",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Cryptographic Engineering",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Algorithms",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Computer Operating Systems",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Intro to Computer Systems Performance Evaluation",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Introduction to Queueing Theory",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Florida Atlantic University",
-    "program": "Software Hardware Co-Design",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Syllabus for SP26  CS 157C Sec 81   NoSQL Kim",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Syllabus for SP26  CS 157C Sec 80   NoSQL Kim",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Syllabus CS 146 01 Spring 2026 Navrati Saxena",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Tahereh Introduction to Machine Learning CS 171 Spring 2026 Arabghalizi",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Syllabus for SP26  CS 151 Sec 01   Object Oriented Dsgn Kim",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "S26 CS100W 02 Syllabus RobAshcom",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-UG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Tahereh Introduction to Database Management Systems CS 157A Spring 2026 Arabghalizi",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Syllabus 258 01 Spring 2026 Navrati Saxena",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Computer Game Design and Programming CS 134 Spring 2026 Chheang",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Computer Architecture CS 147 02 03 Spring 2026 Tsao",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "San Jose State University",
-    "program": "Syllabus CS 122 03 S26 Jennifer Chun",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "1 IDP of MGU  Final 1 Institutional Development Plan Nov 24",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "MGU UGC approval pdf",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "5805 AC A 1 2024 MGU",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Applied Accounting and Taxation",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Applied Accounting and Taxation",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Banking and Financial Services",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-UG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Agro Food Processing",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Food Technology and Analysis",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Business Accounting and Taxation",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Business Accounting and Taxation 2",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc Honours Broadcasting and Journalism",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "BJ",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Animation and Graphic Design",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Logistics Management",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Industrial Instrumentation and Automation",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Fashion Design and Management",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc .Honours Software Development and System Administration",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . HonoursTourism Administration and Hospitality",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Tourism Administration and Hospitality",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Advanced Course in Multi Sports and Fitness Training",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Tourism and Hospitality Managment",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "1021 AC A 12 2026 MGU 1",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Sound Engineering",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "B.Voc . Honours Fashion Technology and Merchandising",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "1075 AC A 12 2026 MGU",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Business Law and Management",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-PG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Banking Finance",
-    "official_website": "",
-    "entrance_exams": [
-      {
-        "name": "CUET-UG",
-        "website": "https://cuet.nta.nic.in"
-      }
-    ],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "CHEMISTRY",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Environmental Science",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Textile and Fashion Designing",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Public Health",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "855 AC A 12 2026 MGU",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Audio Media Communication",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Fashion and Apparel Design",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
-  },
-  {
-    "college": "Mahatma Gandhi University",
-    "program": "Multimedia Graphic Design",
-    "official_website": "",
-    "entrance_exams": [],
-    "pyq_links": [],
-    "last_updated": "2026-03-16"
   }
 ]
